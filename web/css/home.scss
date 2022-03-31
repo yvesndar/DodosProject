@@ -1,0 +1,1196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  color: black;
+  transition: 0.5s;
+  background-color: rgba(31, 31, 31, 1);
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  li {
+    list-style: none;
+  }
+  h1 {
+    color: white;
+    font-size: 1rem;
+    margin: 2% 0;
+  }
+  span {
+    color: rgba(198, 22, 22, 1);
+  }
+  h2 {
+    text-align: center;
+    font-size: 1.5em;
+    color: rgba(198, 22, 22, 1);
+    margin: 2% 0;
+  }
+  h3 {
+    font-size: 0.6rem;
+  }
+  h4 {
+    font-size: 0.8em;
+    color: #c61616;
+    margin: 2% 0;
+  }
+  p {
+    margin: 2% 0;
+    font-size: 0.5rem;
+  }
+  #home {
+    color: #c61616;
+  }
+  main {
+    .welcome-image {
+      padding: 1rem 0;
+      background-color: rgb(49, 49, 49);
+    }
+    .models {
+      padding: 1rem 0;
+      background-color: rgb(49, 49, 49);
+      .model-list {
+        .model1,
+        .model2,
+        .model3,
+        .model4,
+        .model5,
+        .model6,
+        .model7,
+        .model8,
+        .model9,
+        .model10,
+        .model11,
+        .model12 {
+          background-color: rgba(31, 31, 31, 1);
+          padding: 1rem 0;
+          border-radius: 2rem;
+        }
+      }
+    }
+    .benefits {
+      padding: 1rem 0;
+    }
+    .some-cars {
+      padding: 1rem 0;
+      background-color: rgb(49, 49, 49);
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  header {
+    background-color: rgba(31, 31, 31, 1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 1% 0;
+    a {
+      color: white;
+    }
+    .navigation {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: auto;
+      .logo {
+        width: 50%;
+        margin: auto;
+        font-size: 1rem;
+        text-align: center;
+      }
+      .nav_menu {
+        @media screen and (max-width: 760px) {
+          position: fixed;
+          padding: 1rem 0;
+          width: 40%;
+          top: -25rem;
+          left: 10rem;
+          right: 0;
+          margin: 0 auto;
+          transition: 0.4s;
+          background-color: rgba(255, 255, 255, 0.9);
+          border-radius: 1rem;
+        }
+      }
+      .nav_list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+        .nav_item {
+          a {
+            font-size: 1rem;
+            color: black;
+          }
+        }
+      }
+
+      .nav_toggle {
+        width: 50%;
+        margin: auto;
+        text-align: right;
+        cursor: pointer;
+        img {
+          margin: auto;
+          width: 1.5rem;
+        }
+      }
+      #nav-menu.active {
+        top: 0.5rem;
+      }
+    }
+  }
+  main {
+    width: 100%;
+    a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+    li {
+      list-style: none;
+    }
+    h1 {
+      color: white;
+      font-size: 1.6rem;
+      margin: 2% 0;
+    }
+    span {
+      color: rgba(198, 22, 22, 1);
+    }
+    h2 {
+      text-align: center;
+      font-size: 1.4em;
+      color: rgba(198, 22, 22, 1);
+      margin: 2% 0;
+    }
+    h3 {
+      font-size: 1.2rem;
+    }
+    h4 {
+      font-size: 1rem;
+      color: rgba(198, 22, 22, 1);
+      margin: 2% 0;
+    }
+    p {
+      margin: 2% 0;
+      font-size: 0.8rem;
+    }
+    .welcome-image {
+      width: 100%;
+      .welcome {
+        width: 80%;
+        top: 12rem;
+        margin: auto;
+        h1 {
+          color: white;
+          font-size: 2rem;
+          margin: 2% 0;
+        }
+        p {
+          margin: 2% 0;
+        }
+        button {
+          margin: 2% 0;
+          border: none;
+          background-color: rgba(198, 22, 22, 1);
+          font-size: 1rem;
+          padding: 2% 5%;
+          text-align: center;
+          border-radius: 2rem;
+          color: white;
+        }
+      }
+      .image {
+        margin: auto;
+        width: 50%;
+        img {
+          width: 20rem;
+        }
+      }
+      .image2 {
+        display: none;
+      }
+    }
+    .service {
+      .services-list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        .service1,
+        .service2,
+        .service3,
+        .service4,
+        .service5,
+        .service6 {
+          background-color: rgb(49, 49, 49);
+          border: 2px solid rgba(31, 31, 31, 1);
+          width: 80%;
+          border-radius: 2rem;
+          margin: 2% auto;
+          text-align: center;
+          padding: 0.5rem;
+        }
+      }
+    }
+    .models {
+      margin: 2% 0;
+      .model-list {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        .model1,
+        .model2,
+        .model3,
+        .model4,
+        .model5,
+        .model6,
+        .model7,
+        .model8,
+        .model9,
+        .model10,
+        .model11,
+        .model12 {
+          display: flex;
+          width: 70%;
+          margin: 2% auto;
+          img {
+            margin: auto;
+            width: 5rem;
+          }
+          h3 {
+            margin: auto;
+          }
+        }
+      }
+    }
+    .benefits {
+      width: 100%;
+      margin: 2% 0;
+      .benefit-list-image {
+        .benefit-list {
+          margin: 2% 0;
+          .benefit1,
+          .benefit2,
+          .benefit3,
+          .benefit4 {
+            width: 80%;
+            display: flex;
+            margin: auto;
+            img {
+              margin: 0 0.5%;
+              width: 5rem;
+            }
+          }
+        }
+        .benefit-image {
+          margin: 2% 0;
+          text-align: center;
+          img {
+            width: 15rem;
+          }
+        }
+      }
+    }
+    .some-cars {
+      .some-images {
+        .car1,
+        .car2,
+        .car3 {
+          text-align: center;
+          img {
+            width: 15rem;
+          }
+          p {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+    .review {
+      img {
+        margin: 5%;
+        width: 15rem;
+      }
+      .review-message {
+        margin: 2%;
+      }
+    }
+  }
+  footer {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(49, 49, 49);
+    padding: 5% 0;
+    .logo-copyright-social {
+      .logo-footer {
+        h1 {
+          font-size: 1.2rem;
+        }
+      }
+      p {
+        font-size: 1rem;
+      }
+      .social-mail-footer {
+        .social-footer {
+          img {
+            width: 2rem;
+            margin: 2% 3%;
+          }
+        }
+      }
+    }
+    .logo-copyright-social {
+      .logo-footer {
+        h1 {
+          font-size: 1.2rem;
+        }
+      }
+      p {
+        font-size: 1rem;
+      }
+      .social-mail-footer {
+        .social-footer {
+          img {
+            width: 2rem;
+            margin: 2% 3%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 760px) and (max-width: 1350px) {
+  header {
+    background-color: rgba(31, 31, 31, 1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 1% 0;
+    a {
+      color: white;
+    }
+    .navigation {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: auto;
+      .logo {
+        width: 50%;
+        margin: auto;
+        padding: 1%;
+        font-size: 1.6rem;
+      }
+      .nav_menu {
+        @media screen and (max-width: 1350px) {
+          position: fixed;
+          padding: 1rem 0;
+          width: 40%;
+          top: -310px;
+          left: 10rem;
+          right: 0;
+          margin: 0 auto;
+          transition: 0.4s;
+          background-color: white;
+          border-radius: 1rem;
+        }
+      }
+      .nav_list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+        .nav_item {
+          a {
+            font-size: 1rem;
+            color: black;
+          }
+          .links:hover {
+            color: #c61616;
+          }
+        }
+      }
+      .nav_toggle {
+        width: 50%;
+        margin: auto;
+        text-align: right;
+        cursor: pointer;
+        img {
+          margin: auto;
+        }
+      }
+    }
+    #nav-menu.active {
+      top: 0.5rem;
+    }
+  }
+  main {
+    width: 100%;
+    a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+    li {
+      list-style: none;
+    }
+    h1 {
+      color: white;
+      font-size: 1.8rem;
+      margin: 2% 0;
+    }
+    span {
+      color: rgba(198, 22, 22, 1);
+    }
+    h2 {
+      text-align: center;
+      font-size: 1.6em;
+      color: rgba(198, 22, 22, 1);
+      margin: 2% 0;
+    }
+    h3 {
+      font-size: 1.4rem;
+    }
+    h4 {
+      font-size: 1.2rem;
+      color: rgba(198, 22, 22, 1);
+      margin: 2% 0;
+    }
+    p {
+      margin: 2% 0;
+      font-size: 1rem;
+    }
+    .welcome-image {
+      width: 100%;
+      padding: 2%;
+      .welcome {
+        width: 70%;
+        top: 12rem;
+        margin: auto;
+        h1 {
+          color: white;
+          font-size: 2rem;
+          margin: 2% 0;
+        }
+        p {
+          margin: 2% 0;
+        }
+        button {
+          margin: 2% 0;
+          border: none;
+          background-color: rgba(198, 22, 22, 1);
+          font-size: 1rem;
+          padding: 2% 5%;
+          text-align: center;
+          border-radius: 2rem;
+          font-weight: bold;
+        }
+      }
+      .image {
+        width: 50%;
+        margin: auto;
+        img {
+          width: 30rem;
+        }
+      }
+      .image2 {
+        display: none;
+      }
+    }
+    .service {
+      .services-list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        .service1,
+        .service2,
+        .service3,
+        .service4,
+        .service5,
+        .service6 {
+          background-color: rgb(49, 49, 49);
+          border: 2px solid rgba(31, 31, 31, 1);
+          width: 40%;
+          border-radius: 2rem;
+          margin: 2% auto;
+          text-align: center;
+          padding: 0.5rem;
+        }
+      }
+    }
+    .models {
+      margin: 2% 0;
+      .model-list {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        .model1,
+        .model2,
+        .model3,
+        .model4,
+        .model5,
+        .model6,
+        .model7,
+        .model8,
+        .model9,
+        .model10,
+        .model11,
+        .model12 {
+          display: flex;
+          width: 40%;
+          margin: 2% auto;
+          img {
+            margin: auto;
+            width: 5rem;
+          }
+          h3 {
+            margin: auto;
+          }
+        }
+      }
+    }
+    .benefits {
+      width: 100%;
+      margin: 2% 0;
+      .benefit-list-image {
+        .benefit-list {
+          margin: 2% 0;
+          display: flex;
+          flex-wrap: wrap;
+          .benefit1,
+          .benefit2,
+          .benefit3,
+          .benefit4 {
+            width: 40%;
+            display: flex;
+            margin: auto;
+            img {
+              margin: 0 0.5%;
+              width: 5rem;
+            }
+          }
+        }
+        .benefit-image {
+          margin: 2% 0;
+          text-align: center;
+          img {
+            width: 30rem;
+          }
+        }
+      }
+    }
+    .some-cars {
+      .some-images {
+        .car1,
+        .car2,
+        .car3 {
+          text-align: center;
+          img {
+            width: 20rem;
+          }
+          p {
+            font-size: 1.8rem;
+          }
+        }
+      }
+    }
+    .review {
+      img {
+        margin: 5%;
+        width: 25rem;
+      }
+      .review-message {
+        margin: 2%;
+      }
+    }
+  }
+  footer {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(49, 49, 49);
+    padding: 5% 0;
+    .logo-copyright-social {
+      .logo-footer {
+        h1 {
+          font-size: 1.2rem;
+        }
+      }
+      p {
+        font-size: 1rem;
+      }
+      .social-mail-footer {
+        .social-footer {
+          img {
+            width: 2rem;
+            margin: 2% 3%;
+          }
+        }
+      }
+    }
+    .logo-copyright-social {
+      .logo-footer {
+        h1 {
+          font-size: 1.2rem;
+        }
+      }
+      p {
+        font-size: 1rem;
+      }
+      .social-mail-footer {
+        .social-footer {
+          img {
+            width: 2rem;
+            margin: 2% 3%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  header {
+    background-color: rgba(31, 31, 31, 1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 1% 0;
+    a {
+      color: white;
+    }
+    .navigation {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: auto;
+      .logo {
+        width: 25%;
+        margin: auto;
+        padding: 0.5rem;
+        font-size: 1.6rem;
+      }
+      .nav_menu {
+        width: 65%;
+        top: 0px;
+        left: 0px;
+        right: 0;
+        margin: 0 auto;
+        transition: 0.4s;
+        border-radius: 1rem;
+      }
+      .nav_list {
+        margin: auto;
+        display: flex;
+        justify-content: end;
+        .nav_item {
+          margin: 1rem 2rem;
+          a {
+            font-size: 1.2rem;
+          }
+          .links:hover {
+            color: #c61616;
+          }
+        }
+      }
+      .nav_toggle {
+        display: none;
+      }
+    }
+  }
+  main {
+    width: 100%;
+    margin-top: 5%;
+    a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+    li {
+      list-style: none;
+    }
+    h1 {
+      color: white;
+      font-size: 2rem;
+      margin: 2% 0;
+    }
+    span {
+      color: rgba(198, 22, 22, 1);
+    }
+    h2 {
+      text-align: center;
+      font-size: 1.8em;
+      color: rgba(198, 22, 22, 1);
+      margin: 2% 0;
+    }
+    h3 {
+      font-size: 1.6rem;
+    }
+    h4 {
+      font-size: 1.4rem;
+      color: rgba(198, 22, 22, 1);
+      margin: 2% 0;
+    }
+    p {
+      margin: 2% 0;
+      font-size: 1rem;
+    }
+    .welcome-image {
+      width: 100%;
+      padding: 2%;
+      display: flex;
+      margin-top: 0%;
+      .welcome {
+        width: 40%;
+        top: 12rem;
+        margin: auto;
+        h1 {
+          color: white;
+          font-size: 2.4rem;
+          margin: 2% 0;
+        }
+        p {
+          margin: 2% 0;
+        }
+        button {
+          margin: 2% 0;
+          border: none;
+          background-color: rgba(198, 22, 22, 1);
+          font-size: 1rem;
+          padding: 2% 5%;
+          text-align: center;
+          border-radius: 2rem;
+          font-weight: bold;
+        }
+      }
+      .image {
+        display: none;
+        img {
+          width: 30rem;
+        }
+      }
+      .image2 {
+        margin: auto;
+        img {
+          width: 40vw;
+        }
+      }
+    }
+    .service {
+      .services-list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        .service1,
+        .service2,
+        .service3,
+        .service4,
+        .service5,
+        .service6 {
+          background-color: rgb(49, 49, 49);
+          border: 2px solid rgba(31, 31, 31, 1);
+          width: 30%;
+          border-radius: 2rem;
+          margin: 2% auto;
+          text-align: center;
+          padding: 0.5rem;
+        }
+      }
+    }
+    .models {
+      margin: 2% 0;
+      .model-list {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        .model1,
+        .model2,
+        .model3,
+        .model4,
+        .model5,
+        .model6,
+        .model7,
+        .model8,
+        .model9,
+        .model10,
+        .model11,
+        .model12 {
+          display: flex;
+          width: 30%;
+          margin: 2% auto;
+          img {
+            margin: auto;
+            width: 5rem;
+          }
+          h3 {
+            margin: auto;
+          }
+        }
+      }
+    }
+    .benefits {
+      width: 100%;
+      margin: 2% 0;
+      .benefit-list-image {
+        display: flex;
+        .benefit-list {
+          margin: 2% 0;
+          .benefit1,
+          .benefit2,
+          .benefit3,
+          .benefit4 {
+            width: 70%;
+            display: flex;
+            margin: auto;
+            img {
+              margin: auto;
+              width: 5rem;
+            }
+          }
+        }
+        .benefit-image {
+          margin: auto;
+          text-align: center;
+          img {
+            width: 45rem;
+          }
+        }
+      }
+    }
+    .some-cars {
+      .some-images {
+        display: flex;
+        .car1,
+        .car2,
+        .car3 {
+          text-align: center;
+          margin: auto;
+          img {
+            width: 30vw;
+          }
+          p {
+            font-size: 1.8rem;
+          }
+        }
+      }
+    }
+    .review {
+      display: flex;
+      img {
+        margin: 5%;
+        width: 25rem;
+      }
+      .review-message {
+        margin: 2%;
+      }
+    }
+  }
+  footer {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(49, 49, 49);
+    padding: 1% 0;
+    .logo-copyright-social {
+      display: flex;
+      margin: auto;
+      .logo-footer {
+        margin: auto;
+        h1 {
+          font-size: 2vw;
+        }
+      }
+      p {
+        font-size: 1.2vw;
+      }
+      .social-mail-footer {
+        margin: auto;
+        .social-footer {
+          margin: auto;
+          img {
+            width: 2rem;
+            margin: 2% 3%;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*@media screen and (min-width: 1024px) {
+  header {
+    background-color: rgba(31, 31, 31, 1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 1% 0;
+    a {
+      color: white;
+    }
+    .navigation {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: auto;
+      .logo {
+        width: 25%;
+        margin: auto;
+        padding: 0.5%;
+        font-size: 2.4vw;
+      }
+      .nav_menu {
+        width: 65%;
+        margin: 0 auto;
+        transition: 0.4s;
+        border-radius: 1rem;
+      }
+      .nav_list {
+        margin: auto;
+        display: flex;
+        justify-content: end;
+        .nav_item {
+          margin: 1% 2%;
+          a {
+            font-size: 1.6vw;
+            color: white;
+          }
+        }
+      }
+      .nav_toggle {
+        display: none;
+      }
+    }
+  }
+  main {
+    width: 100%;
+    margin-top: 10%;
+    a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+    li {
+      list-style: none;
+    }
+    h1 {
+      color: white;
+      font-size: 2.2rem;
+      margin: 2% 0;
+    }
+    span {
+      color: rgba(198, 22, 22, 1);
+    }
+    h2 {
+      text-align: center;
+      font-size: 2em;
+      color: rgba(198, 22, 22, 1);
+      margin: 2% 0;
+    }
+    h3 {
+      font-size: 1.8rem;
+    }
+    h4 {
+      font-size: 1.6rem;
+      color: rgba(198, 22, 22, 1);
+      margin: 2% 0;
+    }
+    p {
+      margin: 2% 0;
+      font-size: 1.2rem;
+    }
+    .welcome-image {
+      width: 100%;
+      padding: 2%;
+      display: flex;
+      margin-top: 0%;
+      .welcome {
+        width: 40%;
+        top: 12rem;
+        margin: auto;
+        h1 {
+          color: white;
+          font-size: 2.4rem;
+          margin: 2% 0;
+        }
+        p {
+          margin: 2% 0;
+        }
+        button {
+          margin: 2% 0;
+          border: none;
+          background-color: rgba(198, 22, 22, 1);
+          font-size: 1rem;
+          padding: 2% 5%;
+          text-align: center;
+          border-radius: 2rem;
+          font-weight: bold;
+        }
+      }
+      .image {
+        display: none;
+        img {
+          width: 30rem;
+        }
+      }
+      .image2 {
+        margin: auto;
+        img {
+          width: 40vw;
+        }
+      }
+    }
+    .service {
+      .services-list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        .service1,
+        .service2,
+        .service3,
+        .service4,
+        .service5,
+        .service6 {
+          background-color: rgb(49, 49, 49);
+          border: 2px solid rgba(31, 31, 31, 1);
+          width: 30%;
+          border-radius: 2rem;
+          margin: 2% auto;
+          text-align: center;
+          padding: 0.5rem;
+        }
+      }
+    }
+    .models {
+      margin: 2% 0;
+      .model-list {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        .model1,
+        .model2,
+        .model3,
+        .model4,
+        .model5,
+        .model6,
+        .model7,
+        .model8,
+        .model9,
+        .model10,
+        .model11,
+        .model12 {
+          display: flex;
+          width: 25%;
+          margin: 2% auto;
+          img {
+            margin: auto;
+            width: 5rem;
+          }
+          h3 {
+            margin: auto;
+          }
+        }
+      }
+    }
+    .benefits {
+      width: 100%;
+      margin: 2% 0;
+      .benefit-list-image {
+        display: flex;
+        .benefit-list {
+          margin: 2% 0;
+          .benefit1,
+          .benefit2,
+          .benefit3,
+          .benefit4 {
+            width: 70%;
+            display: flex;
+            margin: auto;
+            img {
+              margin: auto;
+              width: 5rem;
+            }
+          }
+        }
+        .benefit-image {
+          margin: auto;
+          text-align: center;
+          img {
+            margin: auto;
+            width: 50vw;
+          }
+        }
+      }
+    }
+    .some-cars {
+      .some-images {
+        display: flex;
+        .car1,
+        .car2,
+        .car3 {
+          text-align: center;
+          margin: auto;
+          img {
+            width: 30vw;
+          }
+          p {
+            font-size: 1.8rem;
+          }
+        }
+      }
+    }
+    .review {
+      display: flex;
+      img {
+        margin: 5%;
+        width: 35vw;
+      }
+      .review-message {
+        margin: 2%;
+      }
+    }
+  }
+  footer {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(49, 49, 49);
+    padding: 1% 0;
+    .logo-copyright-social {
+      display: flex;
+      margin: auto;
+      .logo-footer {
+        margin: auto;
+        h1 {
+          font-size: 2vw;
+        }
+      }
+      p {
+        font-size: 1.2vw;
+      }
+      .social-mail-footer {
+        margin: auto;
+        .social-footer {
+          margin: auto;
+          img {
+            width: 2rem;
+            margin: 2% 3%;
+          }
+        }
+      }
+    }
+  }
+}
+*/
