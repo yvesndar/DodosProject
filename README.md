@@ -33,37 +33,45 @@ offer better and improve services to them.
 Allows the customer to book space for a group in the case of weddings or corporate meetings
 (Event management).
 
-#User
+User
 
 
-#1 Admin:
-Admin can login to the system.
-Verify the car information database.
-Generate price strategy.
-Handle the payment system.
-Finalize the order.
-Cancel the order.
+1 Admin:
+
+1.	Admin can login to the system.
+2.	Verify the car information database.
+3.	Generate price strategy.
+4.	Handle the payment system.
+5.	Finalize the order.
+6.	Cancel the order.
+
 
 
 #2 Employee:
-It updates the database.
-Give information to the customer about the car.
-Provides the alternatives.
-Maintain contacts.
+
+1.	It updates the database.
+2.	Give information to the customer about the car.
+3.	Provides the alternatives.
+4.	Maintain contacts.
+
 
 
 #3 Maintenance Manager:
-It checks for the maintenance.
-Give to the maintenance.
-Give information to the admin.
-Update the database.
+
+1.	It checks for the maintenance.
+2.	Give to the maintenance.
+3.	Give information to the admin.
+4.	Update the database.
+
 
 
 #4 Customer:
-Customer can login to the system.
-Visit the website.
-Place the order.
-Cancel the order.
+
+1.	Customer can login to the system.
+2.	Visit the website.
+3.	Place the order.
+4.	Cancel the order.
+
 
 
 Functional Requirements:
@@ -74,76 +82,74 @@ accomplish their tasks.
 
 
 1 Reservation:
-The system must allow the customer to register for reservation.
-The system shall allow the customer to view detail description of particular car.
-The system shall present an option for advanced search to limit the car search to specific categories of car search.
-The system must allow the customers to select specific car using different search
-category while reservation.
-The system must view list of available car during reservation.
-The system shall allow the customers to cancel reservation using reservation
-confirmation number.
-The system shall allow the employee to update reservation information.
-The system shall allow the employee to view reservations made by customers.
-The system shall present information on protection products and their daily costs,
-and requests the customer to accept or decline regulation terms during reservation.
-The system must be able to provide a unique reservation conformation number for all
-successfully committed reservations.
-The system must be able to display reservation summary for successfully committed
-reservation.
+
+1.	The system must allow the customer to register for reservation.
+2.	The system shall allow the customer to view detail description of particular car.
+3.	The system shall present an option for advanced search to limit the car search to specific categories of car search.
+4.	The system must allow the customers to select specific car using different search category while reservation.
+5.	The system must view list of available car during reservation.
+6.	The system shall allow the customers to cancel reservation using reservation confirmation number.
+7.	The system shall allow the employee to update reservation information.
+8.	The system shall allow the employee to view reservations made by customers.
+9.	The system shall present information on protection products and their daily costs, and requests the customer to accept or decline regulation terms during reservation.
+10.	The system must be able to provide a unique reservation conformation number for all successfully committed reservations.
+11.	The system must be able to display reservation summary for successfully committed reservation.
+
 
 
 2 Log in:
-The system should allow manager to login to the system using their username and
-password.
-The system should allow employee to login to the system using their username and
-password.
-The system shall allow the manager to create new user account.
-The system shall allow manager to change account password.
-14
-The system shall allow staff to change account password.
-The system shall allow staff to logout.
-The system shall allow manager to logout.
+
+1.	The system should allow manager to login to the system using their username and password.
+2.	The system should allow employee to login to the system using their username and password.
+3.	The system shall allow the manager to create new user account.
+4.	The system shall allow manager to change account password.
+5.	The system shall allow staff to change account password.
+6.	The system shall allow staff to logout.
+7.	The system shall allow manager to logout.
+
 
 
 3 Car:
-The system should allow staff to register new cars.
-The system shall allow staff to select cars in the list.
-The system shall allow customer to select cars in the list.
-The system shall allow staff to Search cars by specific record.
-The system shall allow customer and staff to Search cars by specific record.
-The system shall allow staff to update information of the car in need of modification.
-The system shall allow staff to display all lists of cars.
-The system shall allow staff to display all available car.
-The system shall allow customer to display all available car.
-The system shall allow staff to display all rented car.
-The system shall allow staff to display all off duty car.
+
+1.	The system should allow staff to register new cars.
+2.	The system shall allow staff to select cars in the list.
+3.	The system shall allow customer to select cars in the list.
+4.	The system shall allow staff to Search cars by specific record.
+5.	The system shall allow customer and staff to Search cars by specific record.
+6.	The system shall allow staff to update information of the car in need of modification.
+7.	The system shall allow staff to display all lists of cars.
+8.	The system shall allow staff to display all available car.
+9.	The system shall allow customer to display all available car.
+10.	The system shall allow staff to display all rented car.
+11.	The system shall allow staff to display all off duty car.
+
 
 
 
 4 Rent:
-The system shall allow staff to register customers into rental list.
-The system shall allow staff to update about customer rent record details in the rental
-list.
-The system shall be able to save all changes made on the customer rent list.
-The system shall allow staff to select customer rent record by specific search category.
-The system shall allow staff to search rent record of customers using specific
-categories.
-The system shall allow staff to display customers, who rent cars.
-The system shall allow staff to display all customers rent record.
-The system must provide printable summary for successful committed rent.
+
+1.	The system shall allow staff to register customers into rental list.
+2.	The system shall allow staff to update about customer rent record details in the rental list.
+3.	The system shall be able to save all changes made on the customer rent list.
+4.	The system shall allow staff to select customer rent record by specific search category.
+5.	The system shall allow staff to search rent record of customers using specific categories.
+6.	The system shall allow staff to display customers, who rent cars.
+7.	The system shall allow staff to display all customers rent record.
+8.	The system must provide printable summary for successful committed rent.
+
 
 
 5 buy:
-The system shall allow staff to register customers into bought list.
-The system shall allow staff to update about customer rent record details in the bought
-list.
-The system shall be able to save all changes made on the customer bought list.
-The system shall allow staff to select customer bought record by specific search category.
-The system shall allow staff to search rent record of customers using specific
-categories.
-The system shall allow staff to display customers, who bought cars.
-The system shall allow staff to display all customers bought record.
-The system must provide printable summary for successful committed buy.
+
+1.	The system shall allow staff to register customers into bought list.
+2.	The system shall allow staff to update about customer rent record details in the bought list.
+3.	The system shall be able to save all changes made on the customer bought list.
+4.	The system shall allow staff to select customer bought record by specific search category.
+5.	The system shall allow staff to search rent record of customers using specific categories.
+6.	The system shall allow staff to display customers, who bought cars.
+7.	The system shall allow staff to display all customers bought record.
+8.	The system must provide printable summary for successful committed buy.
+
 
 
 1.	Customer
