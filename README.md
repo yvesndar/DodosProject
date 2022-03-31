@@ -8,6 +8,8 @@ transport provider. Now a days, by some clicks only, we can get whatever you wan
 We already know about the online shopping, e-banking etc. Similarly, This web application System is the online facility to book cars online and buy them within few clicks only.
 
 This web application System is developed to provide the following services:
+
+
 1. Enhance Business Processes:
 To be able to use internet technology to project the rental company to the global world
 instead of limiting their services to their local domain alone, thus increase their return on
@@ -31,8 +33,10 @@ offer better and improve services to them.
 Allows the customer to book space for a group in the case of weddings or corporate meetings
 (Event management).
 
-User
-1 Admin:
+#User
+
+
+#1 Admin:
 Admin can login to the system.
 Verify the car information database.
 Generate price strategy.
@@ -41,21 +45,21 @@ User
 Cancel the order.
 
 
-2 Employee:
+#2 Employee:
 It updates the database.
 Give information to the customer about the car.
 Provides the alternatives.
 Maintain contacts.
 
 
-3 Maintenance Manager:
+#3 Maintenance Manager:
 It checks for the maintenance.
 Give to the maintenance.
 Give information to the admin.
 Update the database.
 
 
-4 Customer:
+#4 Customer:
 Customer can login to the system.
 Visit the website.
 Place the order.
