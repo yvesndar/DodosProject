@@ -118,7 +118,7 @@ body button:hover {
   .container header .nav-bar .nav-link li a:hover {
     color: red;
   }
-  .container header .nav-bar .nav-link li .rent {
+  .container header .nav-bar .nav-link li .buy {
     color: red;
   }
   .container header .nav-bar .show {
@@ -320,7 +320,7 @@ body button:hover {
   .container header .nav-bar .nav-link li a:hover {
     color: red;
   }
-  .container header .nav-bar .nav-link li .rent {
+  .container header .nav-bar .nav-link li .buy {
     color: red;
   }
   .container header .nav-bar .show {
@@ -522,7 +522,7 @@ body button:hover {
   .container header .nav-bar .nav-link li a:hover {
     color: red;
   }
-  .container header .nav-bar .nav-link li .rent {
+  .container header .nav-bar .nav-link li .buy {
     color: red;
   }
   .container header .nav-bar .show {
@@ -716,7 +716,7 @@ body button:hover {
   .container header .nav-bar ul li a:hover {
     color: red;
   }
-  .container header .nav-bar ul li .rent {
+  .container header .nav-bar ul li .buy {
     color: red;
   }
   .container header .btn {
@@ -911,7 +911,7 @@ body button:hover {
   .container header .nav-bar ul li a:hover {
     color: red;
   }
-  .container header .nav-bar ul li .rent {
+  .container header .nav-bar ul li .buy {
     color: red;
   }
   .container header .btn {
@@ -1048,4 +1048,4 @@ body button:hover {
     margin: 2% 3%;
   }
 }
-/*# sourceMappingURL=rent.css.map */
+/*# sourceMappingURL=buy.css.map */

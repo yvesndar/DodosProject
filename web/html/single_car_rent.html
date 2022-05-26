@@ -8,76 +8,60 @@
     <link rel="stylesheet" href="/css/single_car_rent.css" />
   </head>
   <body>
-    <header>
-      <nav id="navigation" class="navigation">
-        <a href="" class="logo">GORILLA MOTORS</a>
-        <div id="nav-menu" class="nav_menu">
-          <ul id="nav_list" class="nav_list">
-            <li class="nav_item">
-              <a href="/html/home.html" id="home" class="links">Home</a>
+    <div class="container">
+      <header>
+        <!-- logo for the company -->
+        <a href="/html/Home.html" class="logo">DODOS Ltd</a>
+        <div class="nav-bar" id="nav-bar">
+          <!-- navigation links -->
+          <ul class="nav-link" id="nav-link">
+            <li class="nav-item">
+              <a href="/html/Home.html" class="home">Home</a>
             </li>
-            <li class="nav_item">
-              <a href="/html/about.html" id="About" class="links">About</a>
+            <li class="nav-item">
+              <a href="" class="about">About</a>
             </li>
-            <li class="nav_item">
-              <a href="/html/rent.html" id="rental" class="links">Rentals</a>
+            <li class="nav-item">
+              <a href="/html/Rent.html" class="rent">Rental</a>
             </li>
-            <li class="nav_item">
-              <a href="" id="buy" class="links">Buy a Car</a>
+            <li class="nav-item">
+              <a href="/html/Buy.html" class="buy">Buy</a>
             </li>
-            <li class="nav_item">
-              <a href="" id="repair" class="links">Repair Shop</a>
+            <li class="nav-item">
+              <a href="" class="repair">Repair</a>
             </li>
-            <li class="nav_item">
-              <a href="" id="order" class="links">Order a Car</a>
+            <li class="nav-item">
+              <a href="" class="contact">Contact</a>
             </li>
           </ul>
         </div>
-        <div id="nav-toggle" class="nav_toggle">
-          <img
-            alt="toggle"
-            onclick="togglemenu()"
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAIBJREFUSEvtVUEOgDAI616m/lxfNmMixrBgids4sePoaCiUFUw+ZXJ+hBPsABajqiu23TEvrqmgEsmkYi/OJNDSSUJNwHBJwBWwNLR63d3kr/E7AKyOMX3j4o02fHPoHngd6sWlk//7gO0YvZtkOJp7lsh62E2QTn4UCP+Th6+KE3LlOBnu4XThAAAAAElFTkSuQmCC"
-          />
-        </div>
-      </nav>
-    </header>
-    <main>
-      <div class="car-image-details">
-        <div class="main-image">
-          <img
-            src="/images/purepngcom-red-volkswagen-tigu_ft.png"
-            alt=""
-            id="one"
-          />
-          <div class="extra-image">
-            <img
-              src="/images/purepngcom-red-volkswagen-tigu_ft.png"
-              alt=""
-              id="two"
-            />
-            <img
-              src="/images/purepngcom-red-volkswagen-tigu_ft.png"
-              alt=""
-              id="three"
-            />
-            <img
-              src="/images/purepngcom-red-volkswagen-tigu_ft.png"
-              alt=""
-              id="four"
-            />
+        <!-- button for the menu of the small devices -->
+        <img
+          class="btn"
+          src="/icon/menu-button-of-three-horizontal-lines.png"
+          alt=""
+        />
+      </header>
+      <main>
+        <div class="car-for-sell">
+          <div class="cars-images">
+            <div class="main-car">
+              <img src="/images/VOLKSWAGEN-TIGUAN-2022-1.png" alt="" />
+            </div>
+            <div class="similar-cars">
+              <img src="/images/vw-tiguan-front-angle-trans_0.png" alt="" />
+              <img src="/images/vw-tiguan-front-angle-trans_0.png" alt="" />
+              <img src="/images/vw-tiguan-front-angle-trans_0.png" alt="" />
+            </div>
           </div>
-        </div>
-        <div class="car-details">
-          <h2>VOLKS WAGEN TIGUAN</h2>
-          <p>MODEL: TIGUAN</p>
-          <p>YEAR: 2021</p>
-          <p>ENGINE: V16 Twin Turbo</p>
-          <p>TYPE: SUV</p>
-          <p>SEATS: % Seats</p>
-          <p>TOP SPEED: 260 Km/h</p>
-          <div class="description">
-            <strong>description</strong>
+          <div class="car-details">
+            <h1>VOLKSWAGEN TIGUAN</h1>
+            <p>MODEL: TIGUAN</p>
+            <p>YEAR : 2021</p>
+            <p>ENGINE : V16 Twin Turbo</p>
+            <p>TYPE : SUV</p>
+            <p>MSEATS : 4 SEATS</p>
+            <h3>DESCRIPTION</h3>
             <p>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
@@ -89,84 +73,65 @@
             </p>
           </div>
         </div>
-      </div>
-      <div class="booking-details">
-        <strong>BOOK INFORMATION</strong>
-        <div class="book-card">
-          <div class="names">
-            <label for="email">Name:</label>
+        <div class="inquiry">
+          <h1>SEND US AN INQUIRY</h1>
+          <form action="">
+            <label for="name"> Names</label>
+            <input type="text" placeholder="name" name="name" required />
+            <label
+              for="email
+            "
+              >Email</label
+            >
+            <input type="text" placeholder="email" name="email" required />
+          </form>
+          <form action="">
+            <label for="color">Color</label>
+            <select name="color" id="color">
+              <option value=""></option>
+              <option value="red">Red</option>
+              <option value="green">Green</option>
+              <option value="blue">Blue</option>
+            </select>
+            <label for="number">Phone Number</label>
             <input
-              type="text"
-              name="Full name"
-              id="name"
-              placeholder="Yves ndaruhuye"
+              type="number"
+              placeholder="Phone Number"
+              name="number"
+              required
             />
-          </div>
-          <div class="mail">
-            <label for="email">Emails:</label>
-            <input
-              type="text"
-              name="Email"
-              id="email"
-              placeholder="xyz@gmail.com"
-            />
-          </div>
-          <div class="color">
-            <label for="email">Colors:</label>
-            <input type="text" name="Color" id="color" placeholder="green" />
-          </div>
-
-          <div class="info">
-            <label for="info">Inform:</label>
-            <input
-              type="text"
-              name="More info"
-              id="info"
-              placeholder="abcdefgh"
-            />
-          </div>
+          </form>
+          <form action="">
+            <textarea
+              name="info"
+              placeholder="More Information"
+              id=""
+              cols="100"
+              rows="20"
+            ></textarea>
+          </form>
+          <button class="submit-form">Submit</button>
         </div>
-        <button>SUBMIT</button>
-      </div>
-      <div class="similar-car">
-        <div class="rent-1">
-          <img src="/images/Audi-SQ5_0.png" alt="" />
-          <p class="details">4X4 WHITE INFINITE SUV</p>
-          <p class="year">2021</p>
-          <a href="/html/single_car_rent.html"><button>View Details</button></a>
-        </div>
-        <div class="rent-2">
-          <img src="/images/Audi-SQ5_0.png" alt="" />
-          <p class="details">4X4 WHITE INFINITE SUV</p>
-          <p class="year">2021</p>
-          <a href="/html/single_car_rent.html"><button>View Details</button></a>
-        </div>
-        <div class="rent-3">
-          <img src="/images/Audi-SQ5_0.png" alt="" />
-          <p class="details">4X4 WHITE INFINITE SUV</p>
-          <p class="year">2021</p>
-          <a href="/html/single_car_rent.html"><button>View Details</button></a>
-        </div>
-      </div>
-    </main>
-    <footer>
-      <div id="logo-copyright-social" class="logo-copyright-social">
-        <div class="logo-footer">
-          <h1>GORILLA MOTORS</h1>
-        </div>
-        <p>2021 GORILLA MOTORS. All right reserved | A site by Grit</p>
-        <div class="social-mail-footer">
-          <div class="social-footer">
-            <img src="/icon/facebook.png" alt="" />
-            <img src="/icon/instagram.png" alt="" />
-            <img src="/icon/twitter.png" alt="" />
+      </main>
+      <footer>
+        <div id="logo-copyright-social" class="logo-copyright-social">
+          <div class="logo-footer">
+            <h1>GORILLA MOTORS</h1>
           </div>
-          <div class="mail-footer">
-            <p>gorillamotorsltd@gmail.com</p>
+          <p>2021 GORILLA MOTORS. All right reserved | A site by Grit</p>
+          <div class="social-mail-footer">
+            <div class="social-footer">
+              <img src="/icon/facebook.png" alt="" />
+              <img src="/icon/instagram.png" alt="" />
+              <img src="/icon/twitter.png" alt="" />
+            </div>
+            <div class="mail-footer">
+              <p>gorillamotorsltd@gmail.com</p>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
-    <script src="/java/home.js"></script>
+      </footer>
+    </div>
+    <script src="/js/Script.js"></script>
   </body>
 </html>

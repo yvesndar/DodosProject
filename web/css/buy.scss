@@ -104,7 +104,7 @@ body {
             a:hover {
               color: red;
             }
-            .rent {
+            .buy {
               color: red;
             }
           }
@@ -297,7 +297,7 @@ body {
             a:hover {
               color: red;
             }
-            .rent {
+            .buy {
               color: red;
             }
           }
@@ -490,7 +490,7 @@ body {
             a:hover {
               color: red;
             }
-            .rent {
+            .buy {
               color: red;
             }
           }
@@ -675,7 +675,7 @@ body {
             a:hover {
               color: red;
             }
-            .rent {
+            .buy {
               color: red;
             }
           }
@@ -857,7 +857,7 @@ body {
             a:hover {
               color: red;
             }
-            .rent {
+            .buy {
               color: red;
             }
           }
@@ -899,81 +899,63 @@ body {
         margin: 2% 0;
         font-size: 1rem;
       }
-      .car-for-sell {
+      .rental-welcome-image {
+        padding: 2rem 0;
         display: flex;
-        .cars-images {
-          width: 50%;
-          .main-car {
-            width: 100%;
-            text-align: center;
-            img {
-              width: 50rem;
-            }
-          }
-          .similar-cars {
-            width: 100%;
-            text-align: center;
-            img {
-              margin: auto;
-            }
-          }
+        background-color: rgba(49, 49, 49, 1);
+        .image {
+          display: none;
         }
-        .car-details {
-          width: 50%;
-          padding: 2% 5%;
-          h1 {
-            color: black;
-            font-weight: bolder;
-          }
-          h3 {
-            color: black;
-            font-size: 2rem;
-            text-align: left;
-          }
-          p {
-            font-size: 1.5rem;
-          }
-        }
-      }
-      .inquiry {
-        width: 100%;
-        margin: auto;
-        font-weight: bold;
-        color: white;
-        background-color: rgb(40, 40, 40);
-        padding: 2% 0;
-        h1 {
-          text-align: center;
-        }
-        form {
-          font-size: 1.5rem;
-          padding: 1% 5%;
-          input {
-            width: 30%;
-            padding: 0.5% 1%;
-            border-radius: 1rem;
+        .welcome {
+          width: 30%;
+          margin: auto;
+          button {
+            padding: 1rem 2rem;
+            border-radius: 2rem;
             border: none;
-            font-size: 1.2rem;
+            background-color: #c61616;
+            color: white;
             font-weight: bold;
           }
         }
-        select {
-          font-size: 1.5rem;
-          padding: 0.5% 5%;
-          border-radius: 1rem;
-          border-radius: 1rem;
-          border: none;
-          font-size: 1.2rem;
-          font-weight: bold;
+        .image2 {
+          margin: 3% auto;
+          img {
+            width: 45vw;
+          }
         }
-        textarea {
-          font-size: 1.5rem;
-          padding: 0.5% 2%;
-          border-radius: 1rem;
-          border-radius: 1rem;
-          border: none;
-          font-size: 1.2rem;
-          font-weight: bold;
+      }
+      .rent-list {
+        padding: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .rent-item {
+          background-color: grey;
+          width: 30rem;
+          border-radius: 2rem;
+          margin: 2rem auto;
+          text-align: center;
+          img {
+            width: 20rem;
+          }
+          .details {
+            font-weight: bold;
+          }
+          .year {
+            color: black;
+            font-weight: bold;
+          }
+          button {
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 1rem;
+            margin-bottom: 2rem;
+          }
+          button:hover {
+            background-color: #c61616;
+            color: white;
+          }
         }
       }
     }

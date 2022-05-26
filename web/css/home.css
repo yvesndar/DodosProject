@@ -3,1324 +3,1886 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-body {
-  width: 100%;
-  color: black;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  background-color: #1f1f1f;
-  color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-body a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-
-body li {
-  list-style: none;
 }
 
 body h1 {
   color: white;
-  font-size: 1rem;
-  margin: 2% 0;
-}
-
-body span {
-  color: #c61616;
+  font-size: large;
 }
 
 body h2 {
+  color: red;
+  font-size: 2rem;
   text-align: center;
-  font-size: 1.5em;
-  color: #c61616;
-  margin: 2% 0;
 }
 
 body h3 {
-  font-size: 0.6rem;
+  color: red;
+  font-size: 2.5rem;
+  text-align: center;
 }
 
 body h4 {
-  font-size: 0.8em;
-  color: #c61616;
-  margin: 2% 0;
+  color: red;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 body p {
-  margin: 2% 0;
-  font-size: 0.5rem;
+  color: white;
 }
 
-body #home {
-  color: #c61616;
-}
-
-body main .welcome-image {
-  padding: 1rem 0;
-  background-color: #313131;
-}
-
-body main .models {
-  padding: 1rem 0;
-  background-color: #313131;
-}
-
-body main .models .model-list .model1,
-body main .models .model-list .model2,
-body main .models .model-list .model3,
-body main .models .model-list .model4,
-body main .models .model-list .model5,
-body main .models .model-list .model6,
-body main .models .model-list .model7,
-body main .models .model-list .model8,
-body main .models .model-list .model9,
-body main .models .model-list .model10,
-body main .models .model-list .model11,
-body main .models .model-list .model12 {
-  background-color: #1f1f1f;
-  padding: 1rem 0;
+body button {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  margin: 2% auto;
+  padding: 1% 2%;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
   border-radius: 2rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-body main .benefits {
-  padding: 1rem 0;
+body button:hover {
+  padding: 2% 4%;
+  font-size: 1.4rem;
 }
 
-body main .some-cars {
-  padding: 1rem 0;
-  background-color: #313131;
+body .overlay {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-@media screen and (max-width: 760px) {
-  header {
-    background-color: #1f1f1f;
-    position: fixed;
+body .hidden {
+  display: none;
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .container {
     width: 100%;
-    top: 0;
-    left: 0;
-    padding: 1% 0;
   }
-  header a {
+  .container header {
+    background-color: #2c2c2c;
+    padding: 0.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container header .logo {
+    width: 30%;
+    text-decoration: none;
+    color: red;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: auto;
+  }
+  .container header .nav-bar {
+    width: 50%;
+  }
+  .container header .nav-bar .nav-link {
+    width: 30%;
+    height: auto;
+    display: block;
+    margin: auto;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1rem 0;
+    top: 0;
+    border-radius: 2rem;
+    right: -22rem;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .container header .nav-bar .nav-link li {
+    margin: auto;
+    list-style: none;
+    text-align: center;
+    margin: 1rem 0;
+  }
+  .container header .nav-bar .nav-link li a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
     color: white;
   }
-  header .navigation {
+  .container header .nav-bar .nav-link li a:hover {
+    color: red;
+  }
+  .container header .nav-bar .nav-link li .home {
+    color: red;
+  }
+  .container header .nav-bar .show {
+    right: 5rem;
+  }
+  .container header .btn {
+    width: 2rem;
+  }
+  .container main {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: auto;
   }
-  header .navigation .logo {
-    width: 50%;
-    margin: auto;
-    font-size: 1rem;
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 760px) and (max-width: 760px) {
-  header .navigation .nav_menu {
+  .container main .login-form {
     position: fixed;
-    padding: 1rem 0;
-    width: 40%;
-    top: -25rem;
-    left: 10rem;
-    right: 0;
-    margin: 0 auto;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 1rem;
-  }
-}
-
-@media screen and (max-width: 760px) {
-  header .navigation .nav_list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    row-gap: 1rem;
-  }
-  header .navigation .nav_list .nav_item a {
-    font-size: 1rem;
-    color: black;
-  }
-  header .navigation .nav_toggle {
+    background-color: rgba(0, 0, 0, 0.815);
     width: 50%;
-    margin: auto;
-    text-align: right;
-    cursor: pointer;
+    border-radius: 2rem;
+    font-weight: bold;
+    color: white;
+    top: -100%;
+    left: 35%;
+    -webkit-transition: 1s;
+    transition: 1s;
   }
-  header .navigation .nav_toggle img {
-    margin: auto;
-    width: 1.5rem;
+  .container main .login-form h1 {
+    font-size: 2rem;
+    color: red;
+    text-align: center;
+    padding: 2% 0;
   }
-  header .navigation #nav-menu.active {
-    top: 0.5rem;
-  }
-  main {
-    width: 100%;
-  }
-  main a {
-    text-decoration: none;
-    color: black;
+  .container main .login-form p {
+    font-size: 1.5rem;
     font-weight: bold;
   }
-  main li {
-    list-style: none;
+  .container main .login-form form {
+    margin: 2rem auto;
+    font-size: 1.5rem;
+    padding: 0 5%;
   }
-  main h1 {
-    color: white;
-    font-size: 1.6rem;
-    margin: 2% 0;
-  }
-  main span {
-    color: #c61616;
-  }
-  main h2 {
-    text-align: center;
-    font-size: 1.4em;
-    color: #c61616;
-    margin: 2% 0;
-  }
-  main h3 {
-    font-size: 1.2rem;
-  }
-  main h4 {
-    font-size: 1rem;
-    color: #c61616;
-    margin: 2% 0;
-  }
-  main p {
-    margin: 2% 0;
-    font-size: 0.8rem;
-  }
-  main .welcome-image {
-    width: 100%;
-  }
-  main .welcome-image .welcome {
+  .container main .login-form form input {
     width: 80%;
-    top: 12rem;
-    margin: auto;
-  }
-  main .welcome-image .welcome h1 {
-    color: white;
-    font-size: 2rem;
-    margin: 2% 0;
-  }
-  main .welcome-image .welcome p {
-    margin: 2% 0;
-  }
-  main .welcome-image .welcome button {
-    margin: 2% 0;
+    padding: 0.5% 1%;
+    border-radius: 1rem;
     border: none;
-    background-color: #c61616;
-    font-size: 1rem;
-    padding: 2% 5%;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .container main .form {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.815);
+    width: 50%;
     text-align: center;
     border-radius: 2rem;
+    font-weight: bold;
+    color: white;
+    top: -100%;
+    left: 25%;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .container main .form h1 {
+    font-size: 2rem;
+    color: red;
+  }
+  .container main .form p {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .container main .form form {
+    margin: 2rem auto;
+    font-size: 1.5rem;
+  }
+  .container main .form form input {
+    width: 15rem;
+    padding: 0.5% 1%;
+    border-radius: 1rem;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .container main .show {
+    top: 5%;
+  }
+  .container main .welcome-image-message {
+    width: 100%;
+    margin: auto;
+    background-color: #222222;
+  }
+  .container main .welcome-image-message .welcome-image {
+    margin: auto;
+    width: 80%;
+  }
+  .container main .welcome-image-message .welcome-image img {
+    margin: auto;
+    width: 60vw;
+  }
+  .container main .welcome-image-message .welcome-message {
+    width: 100%;
+    margin: auto;
+    padding: 2%;
+    text-align: left;
+  }
+  .container main .welcome-image-message .welcome-message h1 {
+    font-size: 3.2rem;
     color: white;
   }
-  main .welcome-image .image {
-    margin: auto;
-    width: 50%;
+  .container main .welcome-image-message .welcome-message h1 span {
+    color: red;
   }
-  main .welcome-image .image img {
-    width: 20rem;
-  }
-  main .welcome-image .image2 {
-    display: none;
-  }
-  main .service .services-list {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  main .service .services-list .service1,
-  main .service .services-list .service2,
-  main .service .services-list .service3,
-  main .service .services-list .service4,
-  main .service .services-list .service5,
-  main .service .services-list .service6 {
-    background-color: #313131;
-    border: 2px solid #1f1f1f;
-    width: 80%;
-    border-radius: 2rem;
-    margin: 2% auto;
-    text-align: center;
-    padding: 0.5rem;
-  }
-  main .models {
+  .container main .welcome-image-message .welcome-message p {
+    font-size: 1.2rem;
+    font-weight: 400;
     margin: 2% 0;
   }
-  main .models .model-list {
+  .container main .welcome-image-message .sign-up-form {
+    width: 50%;
+    background-color: #282828;
+    color: white;
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding: 3% 5%;
+    position: fixed;
+    left: 25%;
+    top: -70%;
+    border-radius: 5rem;
+    text-align: center;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .container main .welcome-image-message .sign-up-form input {
+    margin: 2% auto;
+    padding: 1% 2%;
+    border: none;
+    border-radius: 2rem;
+    width: 35%;
+  }
+  .container main .welcome-image-message .sign-up-form .names {
+    width: 100%;
+    margin: 2% auto;
+    padding: 1% 2%;
+  }
+  .container main .welcome-image-message .sign-up-form .names input {
+    margin: auto;
+  }
+  .container main .welcome-image-message .sign-up-form .email-password {
+    width: 100%;
+    margin: 2% auto;
+    padding: 1% 2%;
+    display: block;
+  }
+  .container main .welcome-image-message .sign-up-form .email-password input {
+    width: 38%;
+  }
+  .container main .welcome-image-message .sign-up-form select {
+    width: 20%;
+    padding: 1% 2%;
+    border: none;
+    border-radius: 2rem;
+  }
+  .container main .welcome-image-message .show {
+    top: 10%;
+  }
+  .container main .services {
+    width: 100%;
+    margin: auto;
+    padding: 3% 5%;
+    background-color: #313131;
+  }
+  .container main .services .services-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 100%;
   }
-  main .models .model-list .model1,
-  main .models .model-list .model2,
-  main .models .model-list .model3,
-  main .models .model-list .model4,
-  main .models .model-list .model5,
-  main .models .model-list .model6,
-  main .models .model-list .model7,
-  main .models .model-list .model8,
-  main .models .model-list .model9,
-  main .models .model-list .model10,
-  main .models .model-list .model11,
-  main .models .model-list .model12 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .container main .services .services-list .service-item {
     width: 70%;
     margin: 2% auto;
-  }
-  main .models .model-list .model1 img,
-  main .models .model-list .model2 img,
-  main .models .model-list .model3 img,
-  main .models .model-list .model4 img,
-  main .models .model-list .model5 img,
-  main .models .model-list .model6 img,
-  main .models .model-list .model7 img,
-  main .models .model-list .model8 img,
-  main .models .model-list .model9 img,
-  main .models .model-list .model10 img,
-  main .models .model-list .model11 img,
-  main .models .model-list .model12 img {
-    margin: auto;
-    width: 5rem;
-  }
-  main .models .model-list .model1 h3,
-  main .models .model-list .model2 h3,
-  main .models .model-list .model3 h3,
-  main .models .model-list .model4 h3,
-  main .models .model-list .model5 h3,
-  main .models .model-list .model6 h3,
-  main .models .model-list .model7 h3,
-  main .models .model-list .model8 h3,
-  main .models .model-list .model9 h3,
-  main .models .model-list .model10 h3,
-  main .models .model-list .model11 h3,
-  main .models .model-list .model12 h3 {
-    margin: auto;
-  }
-  main .benefits {
-    width: 100%;
-    margin: 2% 0;
-  }
-  main .benefits .benefit-list-image .benefit-list {
-    margin: 2% 0;
-  }
-  main .benefits .benefit-list-image .benefit-list .benefit1,
-  main .benefits .benefit-list-image .benefit-list .benefit2,
-  main .benefits .benefit-list-image .benefit-list .benefit3,
-  main .benefits .benefit-list-image .benefit-list .benefit4 {
-    width: 80%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: auto;
-  }
-  main .benefits .benefit-list-image .benefit-list .benefit1 img,
-  main .benefits .benefit-list-image .benefit-list .benefit2 img,
-  main .benefits .benefit-list-image .benefit-list .benefit3 img,
-  main .benefits .benefit-list-image .benefit-list .benefit4 img {
-    margin: 0 0.5%;
-    width: 5rem;
-  }
-  main .benefits .benefit-list-image .benefit-image {
-    margin: 2% 0;
-    text-align: center;
-  }
-  main .benefits .benefit-list-image .benefit-image img {
-    width: 15rem;
-  }
-  main .some-cars .some-images .car1,
-  main .some-cars .some-images .car2,
-  main .some-cars .some-images .car3 {
-    text-align: center;
-  }
-  main .some-cars .some-images .car1 img,
-  main .some-cars .some-images .car2 img,
-  main .some-cars .some-images .car3 img {
-    width: 15rem;
-  }
-  main .some-cars .some-images .car1 p,
-  main .some-cars .some-images .car2 p,
-  main .some-cars .some-images .car3 p {
-    font-size: 1.4rem;
-  }
-  main .review img {
-    margin: 5%;
-    width: 15rem;
-  }
-  main .review .review-message {
-    margin: 2%;
-  }
-  footer {
-    width: 100%;
-    text-align: center;
-    background-color: #313131;
-    padding: 5% 0;
-  }
-  footer .logo-copyright-social .logo-footer h1 {
-    font-size: 1.2rem;
-  }
-  footer .logo-copyright-social p {
-    font-size: 1rem;
-  }
-  footer .logo-copyright-social .social-mail-footer .social-footer img {
-    width: 2rem;
-    margin: 2% 3%;
-  }
-  footer .logo-copyright-social .logo-footer h1 {
-    font-size: 1.2rem;
-  }
-  footer .logo-copyright-social p {
-    font-size: 1rem;
-  }
-  footer .logo-copyright-social .social-mail-footer .social-footer img {
-    width: 2rem;
-    margin: 2% 3%;
-  }
-}
-
-@media screen and (min-width: 760px) and (max-width: 1350px) {
-  header {
-    background-color: #1f1f1f;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    padding: 1% 0;
-  }
-  header a {
-    color: white;
-  }
-  header .navigation {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: auto;
-  }
-  header .navigation .logo {
-    width: 50%;
-    margin: auto;
     padding: 1%;
-    font-size: 1.6rem;
+    background-color: grey;
+    border-radius: 2rem;
+    text-align: center;
   }
-}
-
-@media screen and (min-width: 760px) and (max-width: 1350px) and (max-width: 1350px) {
-  header .navigation .nav_menu {
-    position: fixed;
-    padding: 1rem 0;
-    width: 40%;
-    top: -310px;
-    left: 10rem;
-    right: 0;
-    margin: 0 auto;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-    background-color: white;
-    border-radius: 1rem;
+  .container main .services .services-list .service-item p {
+    font-size: 1.2rem;
   }
-}
-
-@media screen and (min-width: 760px) and (max-width: 1350px) {
-  header .navigation .nav_list {
+  .container main .models {
+    padding: 2% 0;
+    background-color: #222222;
+  }
+  .container main .models .model-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    row-gap: 1rem;
-  }
-  header .navigation .nav_list .nav_item a {
-    font-size: 1rem;
-    color: black;
-  }
-  header .navigation .nav_list .nav_item .links:hover {
-    color: #c61616;
-  }
-  header .navigation .nav_toggle {
-    width: 50%;
-    margin: auto;
-    text-align: right;
-    cursor: pointer;
-  }
-  header .navigation .nav_toggle img {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 90%;
     margin: auto;
   }
-  header #nav-menu.active {
-    top: 0.5rem;
-  }
-  main {
-    width: 100%;
-  }
-  main a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-  }
-  main li {
-    list-style: none;
-  }
-  main h1 {
-    color: white;
-    font-size: 1.8rem;
-    margin: 2% 0;
-  }
-  main span {
-    color: #c61616;
-  }
-  main h2 {
-    text-align: center;
-    font-size: 1.6em;
-    color: #c61616;
-    margin: 2% 0;
-  }
-  main h3 {
-    font-size: 1.4rem;
-  }
-  main h4 {
-    font-size: 1.2rem;
-    color: #c61616;
-    margin: 2% 0;
-  }
-  main p {
-    margin: 2% 0;
-    font-size: 1rem;
-  }
-  main .welcome-image {
-    width: 100%;
-    padding: 2%;
-  }
-  main .welcome-image .welcome {
+  .container main .models .model-list .model-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     width: 70%;
-    top: 12rem;
-    margin: auto;
-  }
-  main .welcome-image .welcome h1 {
-    color: white;
-    font-size: 2rem;
-    margin: 2% 0;
-  }
-  main .welcome-image .welcome p {
-    margin: 2% 0;
-  }
-  main .welcome-image .welcome button {
-    margin: 2% 0;
-    border: none;
-    background-color: #c61616;
-    font-size: 1rem;
-    padding: 2% 5%;
+    margin: 1.5% auto;
+    padding: 1% 2%;
+    background-color: #424242;
     text-align: center;
     border-radius: 2rem;
-    font-weight: bold;
   }
-  main .welcome-image .image {
-    width: 50%;
-    margin: auto;
-  }
-  main .welcome-image .image img {
-    width: 30rem;
-  }
-  main .welcome-image .image2 {
-    display: none;
-  }
-  main .service .services-list {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  main .service .services-list .service1,
-  main .service .services-list .service2,
-  main .service .services-list .service3,
-  main .service .services-list .service4,
-  main .service .services-list .service5,
-  main .service .services-list .service6 {
-    background-color: #313131;
-    border: 2px solid #1f1f1f;
-    width: 40%;
-    border-radius: 2rem;
-    margin: 2% auto;
-    text-align: center;
-    padding: 0.5rem;
-  }
-  main .models {
-    margin: 2% 0;
-  }
-  main .models .model-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 100%;
-  }
-  main .models .model-list .model1,
-  main .models .model-list .model2,
-  main .models .model-list .model3,
-  main .models .model-list .model4,
-  main .models .model-list .model5,
-  main .models .model-list .model6,
-  main .models .model-list .model7,
-  main .models .model-list .model8,
-  main .models .model-list .model9,
-  main .models .model-list .model10,
-  main .models .model-list .model11,
-  main .models .model-list .model12 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 40%;
-    margin: 2% auto;
-  }
-  main .models .model-list .model1 img,
-  main .models .model-list .model2 img,
-  main .models .model-list .model3 img,
-  main .models .model-list .model4 img,
-  main .models .model-list .model5 img,
-  main .models .model-list .model6 img,
-  main .models .model-list .model7 img,
-  main .models .model-list .model8 img,
-  main .models .model-list .model9 img,
-  main .models .model-list .model10 img,
-  main .models .model-list .model11 img,
-  main .models .model-list .model12 img {
+  .container main .models .model-list .model-item img {
     margin: auto;
     width: 5rem;
   }
-  main .models .model-list .model1 h3,
-  main .models .model-list .model2 h3,
-  main .models .model-list .model3 h3,
-  main .models .model-list .model4 h3,
-  main .models .model-list .model5 h3,
-  main .models .model-list .model6 h3,
-  main .models .model-list .model7 h3,
-  main .models .model-list .model8 h3,
-  main .models .model-list .model9 h3,
-  main .models .model-list .model10 h3,
-  main .models .model-list .model11 h3,
-  main .models .model-list .model12 h3 {
-    margin: auto;
-  }
-  main .benefits {
-    width: 100%;
-    margin: 2% 0;
-  }
-  main .benefits .benefit-list-image .benefit-list {
-    margin: 2% 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  main .benefits .benefit-list-image .benefit-list .benefit1,
-  main .benefits .benefit-list-image .benefit-list .benefit2,
-  main .benefits .benefit-list-image .benefit-list .benefit3,
-  main .benefits .benefit-list-image .benefit-list .benefit4 {
-    width: 40%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: auto;
-  }
-  main .benefits .benefit-list-image .benefit-list .benefit1 img,
-  main .benefits .benefit-list-image .benefit-list .benefit2 img,
-  main .benefits .benefit-list-image .benefit-list .benefit3 img,
-  main .benefits .benefit-list-image .benefit-list .benefit4 img {
-    margin: 0 0.5%;
-    width: 5rem;
-  }
-  main .benefits .benefit-list-image .benefit-image {
-    margin: 2% 0;
-    text-align: center;
-  }
-  main .benefits .benefit-list-image .benefit-image img {
-    width: 30rem;
-  }
-  main .some-cars .some-images .car1,
-  main .some-cars .some-images .car2,
-  main .some-cars .some-images .car3 {
-    text-align: center;
-  }
-  main .some-cars .some-images .car1 img,
-  main .some-cars .some-images .car2 img,
-  main .some-cars .some-images .car3 img {
-    width: 20rem;
-  }
-  main .some-cars .some-images .car1 p,
-  main .some-cars .some-images .car2 p,
-  main .some-cars .some-images .car3 p {
-    font-size: 1.8rem;
-  }
-  main .review img {
-    margin: 5%;
-    width: 25rem;
-  }
-  main .review .review-message {
-    margin: 2%;
-  }
-  footer {
-    width: 100%;
-    text-align: center;
-    background-color: #313131;
-    padding: 5% 0;
-  }
-  footer .logo-copyright-social .logo-footer h1 {
-    font-size: 1.2rem;
-  }
-  footer .logo-copyright-social p {
-    font-size: 1rem;
-  }
-  footer .logo-copyright-social .social-mail-footer .social-footer img {
-    width: 2rem;
-    margin: 2% 3%;
-  }
-  footer .logo-copyright-social .logo-footer h1 {
-    font-size: 1.2rem;
-  }
-  footer .logo-copyright-social p {
-    font-size: 1rem;
-  }
-  footer .logo-copyright-social .social-mail-footer .social-footer img {
-    width: 2rem;
-    margin: 2% 3%;
-  }
-}
-
-@media screen and (min-width: 1350px) {
-  header {
-    background-color: #1f1f1f;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    padding: 1% 0;
-  }
-  header a {
-    color: white;
-  }
-  header .navigation {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: auto;
-  }
-  header .navigation .logo {
-    width: 25%;
-    margin: auto;
-    padding: 0.5rem;
-    font-size: 1.6rem;
-  }
-  header .navigation .nav_menu {
-    width: 65%;
-    top: 0px;
-    left: 0px;
-    right: 0;
-    margin: 0 auto;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-    border-radius: 1rem;
-  }
-  header .navigation .nav_list {
-    margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
-  }
-  header .navigation .nav_list .nav_item {
-    margin: 1rem 2rem;
-  }
-  header .navigation .nav_list .nav_item a {
-    font-size: 1.2rem;
-  }
-  header .navigation .nav_list .nav_item .links:hover {
-    color: #c61616;
-  }
-  header .navigation .nav_toggle {
-    display: none;
-  }
-  main {
-    width: 100%;
-    margin-top: 5%;
-  }
-  main a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-  }
-  main li {
-    list-style: none;
-  }
-  main h1 {
-    color: white;
+  .container main .models .model-list .model-item h3 {
     font-size: 2rem;
-    margin: 2% 0;
+    margin: auto;
   }
-  main span {
-    color: #c61616;
-  }
-  main h2 {
-    text-align: center;
-    font-size: 1.8em;
-    color: #c61616;
-    margin: 2% 0;
-  }
-  main h3 {
-    font-size: 1.6rem;
-  }
-  main h4 {
-    font-size: 1.4rem;
-    color: #c61616;
-    margin: 2% 0;
-  }
-  main p {
-    margin: 2% 0;
-    font-size: 1rem;
-  }
-  main .welcome-image {
+  .container main .benefits {
     width: 100%;
-    padding: 2%;
+    padding: 2% 0;
+    background-color: #424242;
+  }
+  .container main .benefits .benefit-list-image {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 0%;
   }
-  main .welcome-image .welcome {
-    width: 40%;
-    top: 12rem;
-    margin: auto;
-  }
-  main .welcome-image .welcome h1 {
-    color: white;
-    font-size: 2.4rem;
+  .container main .benefits .benefit-list-image .benefit-list {
     margin: 2% 0;
   }
-  main .welcome-image .welcome p {
-    margin: 2% 0;
-  }
-  main .welcome-image .welcome button {
-    margin: 2% 0;
-    border: none;
-    background-color: #c61616;
-    font-size: 1rem;
+  .container main .benefits .benefit-list-image .benefit-list .benefit-item {
+    width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: black;
     padding: 2% 5%;
-    text-align: center;
-    border-radius: 2rem;
-    font-weight: bold;
+    margin: 5% auto;
+    border-radius: 5rem;
+    text-align: left;
   }
-  main .welcome-image .image {
+  .container main .benefits .benefit-list-image .benefit-list .benefit-item h4 {
+    text-align: left;
+  }
+  .container main .benefits .benefit-list-image .benefit-list .benefit-item img {
+    margin: auto;
+    width: 4vw;
+  }
+  .container main .benefits .benefit-list-image .benefit-image {
     display: none;
   }
-  main .welcome-image .image img {
-    width: 30rem;
+  .container main .some-cars {
+    padding: 2.5%;
+    background-color: #222222;
   }
-  main .welcome-image .image2 {
+  .container main .some-cars h2 {
+    padding: 2.5%;
+  }
+  .container main .some-cars .some-images .car-item {
+    text-align: center;
     margin: auto;
   }
-  main .welcome-image .image2 img {
+  .container main .some-cars .some-images .car-item img {
     width: 40vw;
   }
-  main .service .services-list {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  main .service .services-list .service1,
-  main .service .services-list .service2,
-  main .service .services-list .service3,
-  main .service .services-list .service4,
-  main .service .services-list .service5,
-  main .service .services-list .service6 {
-    background-color: #313131;
-    border: 2px solid #1f1f1f;
-    width: 30%;
-    border-radius: 2rem;
-    margin: 2% auto;
-    text-align: center;
-    padding: 0.5rem;
-  }
-  main .models {
-    margin: 2% 0;
-  }
-  main .models .model-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 100%;
-  }
-  main .models .model-list .model1,
-  main .models .model-list .model2,
-  main .models .model-list .model3,
-  main .models .model-list .model4,
-  main .models .model-list .model5,
-  main .models .model-list .model6,
-  main .models .model-list .model7,
-  main .models .model-list .model8,
-  main .models .model-list .model9,
-  main .models .model-list .model10,
-  main .models .model-list .model11,
-  main .models .model-list .model12 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 30%;
-    margin: 2% auto;
-  }
-  main .models .model-list .model1 img,
-  main .models .model-list .model2 img,
-  main .models .model-list .model3 img,
-  main .models .model-list .model4 img,
-  main .models .model-list .model5 img,
-  main .models .model-list .model6 img,
-  main .models .model-list .model7 img,
-  main .models .model-list .model8 img,
-  main .models .model-list .model9 img,
-  main .models .model-list .model10 img,
-  main .models .model-list .model11 img,
-  main .models .model-list .model12 img {
-    margin: auto;
-    width: 5rem;
-  }
-  main .models .model-list .model1 h3,
-  main .models .model-list .model2 h3,
-  main .models .model-list .model3 h3,
-  main .models .model-list .model4 h3,
-  main .models .model-list .model5 h3,
-  main .models .model-list .model6 h3,
-  main .models .model-list .model7 h3,
-  main .models .model-list .model8 h3,
-  main .models .model-list .model9 h3,
-  main .models .model-list .model10 h3,
-  main .models .model-list .model11 h3,
-  main .models .model-list .model12 h3 {
-    margin: auto;
-  }
-  main .benefits {
-    width: 100%;
-    margin: 2% 0;
-  }
-  main .benefits .benefit-list-image {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  main .benefits .benefit-list-image .benefit-list {
-    margin: 2% 0;
-  }
-  main .benefits .benefit-list-image .benefit-list .benefit1,
-  main .benefits .benefit-list-image .benefit-list .benefit2,
-  main .benefits .benefit-list-image .benefit-list .benefit3,
-  main .benefits .benefit-list-image .benefit-list .benefit4 {
-    width: 70%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: auto;
-  }
-  main .benefits .benefit-list-image .benefit-list .benefit1 img,
-  main .benefits .benefit-list-image .benefit-list .benefit2 img,
-  main .benefits .benefit-list-image .benefit-list .benefit3 img,
-  main .benefits .benefit-list-image .benefit-list .benefit4 img {
-    margin: auto;
-    width: 5rem;
-  }
-  main .benefits .benefit-list-image .benefit-image {
-    margin: auto;
-    text-align: center;
-  }
-  main .benefits .benefit-list-image .benefit-image img {
-    width: 45rem;
-  }
-  main .some-cars .some-images {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  main .some-cars .some-images .car1,
-  main .some-cars .some-images .car2,
-  main .some-cars .some-images .car3 {
-    text-align: center;
-    margin: auto;
-  }
-  main .some-cars .some-images .car1 img,
-  main .some-cars .some-images .car2 img,
-  main .some-cars .some-images .car3 img {
-    width: 30vw;
-  }
-  main .some-cars .some-images .car1 p,
-  main .some-cars .some-images .car2 p,
-  main .some-cars .some-images .car3 p {
+  .container main .some-cars .some-images .car-item p {
     font-size: 1.8rem;
   }
-  main .review {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .container main .review {
+    background-color: #424242;
+    width: 100%;
+    text-align: left;
   }
-  main .review img {
-    margin: 5%;
-    width: 25rem;
+  .container main .review h2 {
+    text-align: center;
+    margin: auto;
   }
-  main .review .review-message {
+  .container main .review .description {
+    text-align: center;
+  }
+  .container main .review .description img {
+    width: 30rem;
+    margin: auto;
+    border-radius: 2rem;
+  }
+  .container main .review .description .review-message {
     margin: 2%;
+    width: 90%;
+    margin: auto;
+    border-radius: 5rem;
+    padding: 2% 3%;
   }
-  footer {
+  .container main .review .description .review-message h3 {
+    font-size: 2rem;
+    text-align: left;
+  }
+  .container main .review .description .review-message p {
+    text-align: left;
+  }
+  .container footer {
     width: 100%;
     text-align: center;
     background-color: #313131;
     padding: 1% 0;
   }
-  footer .logo-copyright-social {
+  .container footer .logo-copyright-social {
+    margin: auto;
+  }
+  .container footer .logo-copyright-social .logo-footer {
+    margin: auto;
+  }
+  .container footer .logo-copyright-social .logo-footer h1 {
+    font-size: 2.5vw;
+  }
+  .container footer .logo-copyright-social p {
+    font-size: 2vw;
+    margin: auto;
+  }
+  .container footer .logo-copyright-social .social-mail-footer {
+    margin: auto;
+  }
+  .container footer .logo-copyright-social .social-mail-footer .social-footer {
+    margin: auto;
+  }
+  .container footer .logo-copyright-social .social-mail-footer .social-footer img {
+    width: 2rem;
+    margin: 2%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+  .container .login-form {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.815);
+    width: 50%;
+    border-radius: 2rem;
+    font-weight: bold;
+    color: white;
+    top: -100%;
+    left: 35%;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .container .login-form h1 {
+    font-size: 2rem;
+    color: red;
+    text-align: center;
+    padding: 2% 0;
+  }
+  .container .login-form p {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .container .login-form form {
+    margin: 2rem auto;
+    font-size: 1.5rem;
+    padding: 0 5%;
+  }
+  .container .login-form form input {
+    width: 80%;
+    padding: 0.5% 1%;
+    border-radius: 1rem;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .container .form {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.815);
+    width: 50%;
+    text-align: center;
+    border-radius: 2rem;
+    font-weight: bold;
+    color: white;
+    top: -100%;
+    left: 25%;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .container .form h1 {
+    font-size: 2rem;
+    color: red;
+  }
+  .container .form p {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .container .form form {
+    margin: 2rem auto;
+    font-size: 1.5rem;
+  }
+  .container .form form input {
+    width: 15rem;
+    padding: 0.5% 1%;
+    border-radius: 1rem;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .container .show {
+    top: 5%;
+  }
+  .container header {
+    background-color: #2c2c2c;
+    padding: 0.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container header .logo {
+    width: 30%;
+    text-decoration: none;
+    color: red;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: auto;
+  }
+  .container header .nav-bar {
+    width: 50%;
+  }
+  .container header .nav-bar .nav-link {
+    width: 30%;
+    height: auto;
+    display: block;
+    margin: auto;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1rem 0;
+    top: 0;
+    border-radius: 2rem;
+    right: -22rem;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .container header .nav-bar .nav-link li {
+    margin: auto;
+    list-style: none;
+    text-align: center;
+    margin: 1rem 0;
+  }
+  .container header .nav-bar .nav-link li a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+  }
+  .container header .nav-bar .nav-link li a:hover {
+    color: red;
+  }
+  .container header .nav-bar .nav-link li .home {
+    color: red;
+  }
+  .container header .nav-bar .show {
+    right: 5rem;
+  }
+  .container header .btn {
+    width: 2rem;
+  }
+  .container main {
+    width: 100%;
+  }
+  .container main .welcome-image-message {
+    width: 100%;
+    margin: auto;
+    background-color: #222222;
+  }
+  .container main .welcome-image-message .welcome-image {
+    margin: auto;
+    width: 80%;
+  }
+  .container main .welcome-image-message .welcome-image img {
+    margin: auto;
+    width: 60vw;
+  }
+  .container main .welcome-image-message .welcome-message {
+    width: 90%;
+    margin: auto;
+    padding: 2%;
+    text-align: left;
+  }
+  .container main .welcome-image-message .welcome-message h1 {
+    font-size: 3.2rem;
+    color: white;
+  }
+  .container main .welcome-image-message .welcome-message h1 span {
+    color: red;
+  }
+  .container main .welcome-image-message .welcome-message p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 2% 0;
+  }
+  .container main .welcome-image-message .sign-up-form {
+    width: 50%;
+    background-color: #282828;
+    color: white;
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding: 3% 5%;
+    position: fixed;
+    left: 25%;
+    top: -70%;
+    border-radius: 5rem;
+    text-align: center;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .container main .welcome-image-message .sign-up-form input {
+    margin: 2% auto;
+    padding: 1% 2%;
+    border: none;
+    border-radius: 2rem;
+    width: 35%;
+  }
+  .container main .welcome-image-message .sign-up-form .names {
+    width: 100%;
+    margin: 2% auto;
+    padding: 1% 2%;
+  }
+  .container main .welcome-image-message .sign-up-form .names input {
+    margin: auto;
+  }
+  .container main .welcome-image-message .sign-up-form .email-password {
+    width: 100%;
+    margin: 2% auto;
+    padding: 1% 2%;
+    display: block;
+  }
+  .container main .welcome-image-message .sign-up-form .email-password input {
+    width: 38%;
+  }
+  .container main .welcome-image-message .sign-up-form select {
+    width: 20%;
+    padding: 1% 2%;
+    border: none;
+    border-radius: 2rem;
+  }
+  .container main .welcome-image-message .show {
+    top: 10%;
+  }
+  .container main .services {
+    width: 100%;
+    margin: auto;
+    padding: 3% 5%;
+    background-color: #313131;
+  }
+  .container main .services .services-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .container main .services .services-list .service-item {
+    width: 40%;
+    margin: 2% auto;
+    padding: 1%;
+    background-color: grey;
+    border-radius: 2rem;
+    text-align: center;
+  }
+  .container main .services .services-list .service-item p {
+    font-size: 1.2rem;
+  }
+  .container main .models {
+    padding: 2% 0;
+    background-color: #222222;
+  }
+  .container main .models .model-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+  }
+  .container main .models .model-list .model-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 40%;
+    margin: 1.5% auto;
+    padding: 1% 2%;
+    background-color: #424242;
+    text-align: center;
+    border-radius: 2rem;
+  }
+  .container main .models .model-list .model-item img {
+    margin: auto;
+    width: 3rem;
+  }
+  .container main .models .model-list .model-item h3 {
+    font-size: 1.5rem;
+    margin: auto;
+  }
+  .container main .benefits {
+    width: 100%;
+    padding: 2% 0;
+    background-color: #424242;
+  }
+  .container main .benefits .benefit-list-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container main .benefits .benefit-list-image .benefit-list {
+    margin: 2% 0;
+  }
+  .container main .benefits .benefit-list-image .benefit-list .benefit-item {
+    width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: black;
+    padding: 2% 5%;
+    margin: 5% auto;
+    border-radius: 5rem;
+    text-align: left;
+  }
+  .container main .benefits .benefit-list-image .benefit-list .benefit-item h4 {
+    text-align: left;
+  }
+  .container main .benefits .benefit-list-image .benefit-list .benefit-item img {
+    margin: auto;
+    width: 4vw;
+  }
+  .container main .benefits .benefit-list-image .benefit-image {
+    display: none;
+  }
+  .container main .some-cars {
+    padding: 2.5%;
+    background-color: #222222;
+  }
+  .container main .some-cars h2 {
+    padding: 2.5%;
+  }
+  .container main .some-cars .some-images .car-item {
+    text-align: center;
+    margin: auto;
+  }
+  .container main .some-cars .some-images .car-item img {
+    width: 40vw;
+  }
+  .container main .some-cars .some-images .car-item p {
+    font-size: 1.8rem;
+  }
+  .container main .review {
+    background-color: #424242;
+    width: 100%;
+    text-align: left;
+  }
+  .container main .review h2 {
+    text-align: center;
+    margin: auto;
+  }
+  .container main .review .description {
+    text-align: center;
+  }
+  .container main .review .description img {
+    width: 30rem;
+    margin: auto;
+    border-radius: 2rem;
+  }
+  .container main .review .description .review-message {
+    margin: 2%;
+    width: 90%;
+    margin: auto;
+    border-radius: 5rem;
+    padding: 2% 3%;
+  }
+  .container main .review .description .review-message h3 {
+    font-size: 2rem;
+    text-align: left;
+  }
+  .container main .review .description .review-message p {
+    text-align: left;
+  }
+  .container footer {
+    width: 100%;
+    text-align: center;
+    background-color: #313131;
+    padding: 1% 0;
+  }
+  .container footer .logo-copyright-social {
+    margin: auto;
+  }
+  .container footer .logo-copyright-social .logo-footer {
+    margin: auto;
+  }
+  .container footer .logo-copyright-social .logo-footer h1 {
+    font-size: 2.5vw;
+  }
+  .container footer .logo-copyright-social p {
+    font-size: 2vw;
+    margin: auto;
+  }
+  .container footer .logo-copyright-social .social-mail-footer {
+    margin: auto;
+  }
+  .container footer .logo-copyright-social .social-mail-footer .social-footer {
+    margin: auto;
+  }
+  .container footer .logo-copyright-social .social-mail-footer .social-footer img {
+    width: 2rem;
+    margin: 2%;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+  .container .login-form {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.815);
+    width: 50%;
+    border-radius: 2rem;
+    font-weight: bold;
+    color: white;
+    top: -100%;
+    left: 35%;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .container .login-form h1 {
+    font-size: 2rem;
+    color: red;
+    text-align: center;
+    padding: 2% 0;
+  }
+  .container .login-form p {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .container .login-form form {
+    margin: 2rem auto;
+    font-size: 1.5rem;
+    padding: 0 5%;
+  }
+  .container .login-form form input {
+    width: 80%;
+    padding: 0.5% 1%;
+    border-radius: 1rem;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .container .form {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.815);
+    width: 50%;
+    text-align: center;
+    border-radius: 2rem;
+    font-weight: bold;
+    color: white;
+    top: -100%;
+    left: 25%;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .container .form h1 {
+    font-size: 2rem;
+    color: red;
+  }
+  .container .form p {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .container .form form {
+    margin: 2rem auto;
+    font-size: 1.5rem;
+  }
+  .container .form form input {
+    width: 15rem;
+    padding: 0.5% 1%;
+    border-radius: 1rem;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .container .show {
+    top: 5%;
+  }
+  .container header {
+    background-color: #2c2c2c;
+    padding: 0.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container header .logo {
+    width: 30%;
+    text-decoration: none;
+    color: red;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: auto;
+  }
+  .container header .nav-bar {
+    width: 50%;
+  }
+  .container header .nav-bar .nav-link {
+    width: 30%;
+    height: auto;
+    display: block;
+    margin: auto;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1rem 0;
+    top: -25rem;
+    border-radius: 2rem;
+    right: 5rem;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .container header .nav-bar .nav-link li {
+    margin: auto;
+    list-style: none;
+    text-align: center;
+    margin: 1rem 0;
+  }
+  .container header .nav-bar .nav-link li a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+  }
+  .container header .nav-bar .nav-link li a:hover {
+    color: red;
+  }
+  .container header .nav-bar .nav-link li .home {
+    color: red;
+  }
+  .container header .nav-bar .show {
+    top: 0rem;
+  }
+  .container header .btn {
+    width: 2rem;
+  }
+  .container main {
+    width: 100%;
+  }
+  .container main .welcome-image-message {
+    width: 100%;
+    margin: auto;
+    background-color: #222222;
+  }
+  .container main .welcome-image-message .welcome-image {
+    margin: auto;
+    width: 80%;
+  }
+  .container main .welcome-image-message .welcome-image img {
+    margin: auto;
+    width: 60vw;
+  }
+  .container main .welcome-image-message .welcome-message {
+    width: 80%;
+    margin: auto;
+    padding: 2%;
+    text-align: left;
+  }
+  .container main .welcome-image-message .welcome-message h1 {
+    font-size: 3.2rem;
+    color: white;
+  }
+  .container main .welcome-image-message .welcome-message h1 span {
+    color: red;
+  }
+  .container main .welcome-image-message .welcome-message p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 2% 0;
+  }
+  .container main .welcome-image-message .sign-up-form {
+    width: 80%;
+    background-color: #282828;
+    color: white;
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding: 2%;
+    position: fixed;
+    left: 10%;
+    top: -60%;
+    border-radius: 5rem;
+    text-align: center;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .container main .welcome-image-message .sign-up-form input {
+    margin: 3% 0;
+    padding: 1% 2%;
+    border: none;
+    border-radius: 2rem;
+    width: 30%;
+  }
+  .container main .welcome-image-message .sign-up-form .names {
+    width: 100%;
+    margin: 2% auto;
+    padding: 1% 2%;
+  }
+  .container main .welcome-image-message .sign-up-form .names input {
+    margin: auto;
+  }
+  .container main .welcome-image-message .sign-up-form .email-password {
+    width: 100%;
+    margin: 2% auto;
+    padding: 1% 2%;
+    display: block;
+  }
+  .container main .welcome-image-message .sign-up-form .email-password input {
+    width: 38%;
+  }
+  .container main .welcome-image-message .sign-up-form select {
+    width: 20%;
+    padding: 1% 2%;
+    border: none;
+    border-radius: 2rem;
+  }
+  .container main .welcome-image-message .show {
+    top: 10%;
+  }
+  .container main .services {
+    width: 100%;
+    margin: auto;
+    padding: 3% 5%;
+    background-color: #313131;
+  }
+  .container main .services .services-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .container main .services .services-list .service-item {
+    width: 30%;
+    margin: 2% auto;
+    padding: 1%;
+    background-color: grey;
+    border-radius: 2rem;
+    text-align: center;
+  }
+  .container main .services .services-list .service-item p {
+    font-size: 1.2rem;
+  }
+  .container main .models {
+    padding: 2% 0;
+    background-color: #222222;
+  }
+  .container main .models .model-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+  }
+  .container main .models .model-list .model-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 40%;
+    margin: 1.5% auto;
+    padding: 1% 2%;
+    background-color: #424242;
+    text-align: center;
+    border-radius: 2rem;
+  }
+  .container main .models .model-list .model-item img {
+    margin: auto;
+    width: 3rem;
+  }
+  .container main .models .model-list .model-item h3 {
+    font-size: 1.5rem;
+    margin: auto;
+  }
+  .container main .benefits {
+    width: 100%;
+    padding: 2% 0;
+    background-color: #424242;
+  }
+  .container main .benefits .benefit-list-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container main .benefits .benefit-list-image .benefit-list {
+    margin: 2% 0;
+  }
+  .container main .benefits .benefit-list-image .benefit-list .benefit-item {
+    width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: black;
+    padding: 2% 5%;
+    margin: 5% auto;
+    border-radius: 5rem;
+    text-align: left;
+  }
+  .container main .benefits .benefit-list-image .benefit-list .benefit-item h4 {
+    text-align: left;
+  }
+  .container main .benefits .benefit-list-image .benefit-list .benefit-item img {
+    margin: auto;
+    width: 4vw;
+  }
+  .container main .benefits .benefit-list-image .benefit-image {
+    display: none;
+  }
+  .container main .some-cars {
+    padding: 2.5%;
+    background-color: #222222;
+  }
+  .container main .some-cars h2 {
+    padding: 2.5%;
+  }
+  .container main .some-cars .some-images .car-item {
+    text-align: center;
+    margin: auto;
+  }
+  .container main .some-cars .some-images .car-item img {
+    width: 20vw;
+  }
+  .container main .some-cars .some-images .car-item p {
+    font-size: 1.8rem;
+  }
+  .container main .review {
+    background-color: #424242;
+    width: 100%;
+    text-align: left;
+  }
+  .container main .review h2 {
+    text-align: center;
+    margin: auto;
+  }
+  .container main .review .description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container main .review .description img {
+    margin: 5%;
+    width: 20rem;
+    border-radius: 2rem;
+  }
+  .container main .review .description .review-message {
+    margin: 2%;
+    width: 55%;
+    margin: auto;
+    border-radius: 5rem;
+    padding: 2% 3%;
+  }
+  .container main .review .description .review-message h3 {
+    font-size: 2rem;
+    text-align: left;
+  }
+  .container footer {
+    width: 100%;
+    text-align: center;
+    background-color: #313131;
+    padding: 1% 0;
+  }
+  .container footer .logo-copyright-social {
+    margin: auto;
+  }
+  .container footer .logo-copyright-social .logo-footer {
+    margin: auto;
+  }
+  .container footer .logo-copyright-social .logo-footer h1 {
+    font-size: 2.5vw;
+  }
+  .container footer .logo-copyright-social p {
+    font-size: 2vw;
+    margin: auto;
+  }
+  .container footer .logo-copyright-social .social-mail-footer {
+    margin: auto;
+  }
+  .container footer .logo-copyright-social .social-mail-footer .social-footer {
+    margin: auto;
+  }
+  .container footer .logo-copyright-social .social-mail-footer .social-footer img {
+    width: 2rem;
+    margin: 2%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+  .container header {
+    background-color: #2c2c2c;
+    padding: 0.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container header .logo {
+    width: 30%;
+    text-decoration: none;
+    color: red;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: auto;
+  }
+  .container header .nav-bar {
+    width: 50%;
+  }
+  .container header .nav-bar ul {
+    width: 90%;
+    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin: auto;
   }
-  footer .logo-copyright-social .logo-footer {
+  .container header .nav-bar ul li {
+    margin: auto;
+    list-style: none;
+  }
+  .container header .nav-bar ul li a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+  }
+  .container header .nav-bar ul li a:hover {
+    color: red;
+  }
+  .container header .nav-bar ul li .home {
+    color: red;
+  }
+  .container header .btn {
+    display: none;
+  }
+  .container main {
+    width: 100%;
+    background-color: #222222;
+  }
+  .container main .login-form {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.815);
+    width: 30%;
+    border-radius: 2rem;
+    font-weight: bold;
+    color: white;
+    top: -100%;
+    left: 35%;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .container main .login-form h1 {
+    font-size: 2rem;
+    color: red;
+    text-align: center;
+    padding: 2% 0;
+  }
+  .container main .login-form p {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .container main .login-form form {
+    margin: 2rem auto;
+    font-size: 1.5rem;
+    padding: 0 5%;
+  }
+  .container main .login-form form input {
+    width: 20rem;
+    padding: 0.5% 1%;
+    border-radius: 1rem;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .container main .welcome-image-message {
+    width: 90%;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container main .welcome-image-message .welcome-image {
+    margin: auto;
+    width: 45%;
+  }
+  .container main .welcome-image-message .welcome-image img {
+    width: 40vw;
+  }
+  .container main .welcome-image-message .welcome-message {
+    width: 50%;
+    margin: auto;
+    padding: 2%;
+    text-align: left;
+  }
+  .container main .welcome-image-message .welcome-message h1 {
+    font-size: 3.2rem;
+    color: white;
+  }
+  .container main .welcome-image-message .welcome-message h1 span {
+    color: red;
+  }
+  .container main .welcome-image-message .welcome-message p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 2% 0;
+  }
+  .container main .form {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.815);
+    width: 50%;
+    text-align: center;
+    border-radius: 2rem;
+    font-weight: bold;
+    color: white;
+    top: -100%;
+    left: 25%;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .container main .form h1 {
+    font-size: 2rem;
+    color: red;
+  }
+  .container main .form p {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .container main .form form {
+    margin: 2rem auto;
+    font-size: 1.5rem;
+  }
+  .container main .form form input {
+    width: 15rem;
+    padding: 0.5% 1%;
+    border-radius: 1rem;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .container main .show {
+    top: 5%;
+  }
+  .container main .services {
+    width: 100%;
+    margin: auto;
+    padding: 3% 5%;
+    background-color: #313131;
+  }
+  .container main .services .services-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .container main .services .services-list .service-item {
+    width: 30%;
+    margin: 2% auto;
+    padding: 1%;
+    background-color: grey;
+    border-radius: 2rem;
+    text-align: center;
+  }
+  .container main .services .services-list .service-item p {
+    font-size: 1.2rem;
+  }
+  .container main .models {
+    margin: 2% 0;
+  }
+  .container main .models .model-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 90%;
     margin: auto;
   }
-  footer .logo-copyright-social .logo-footer h1 {
-    font-size: 2vw;
+  .container main .models .model-list .model-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 28%;
+    margin: 1.5% auto;
+    padding: 1% 2%;
+    background-color: #424242;
+    text-align: center;
+    border-radius: 2rem;
   }
-  footer .logo-copyright-social p {
-    font-size: 1.2vw;
+  .container main .models .model-list .model-item img {
+    margin: auto;
+    width: 3rem;
   }
-  footer .logo-copyright-social .social-mail-footer {
+  .container main .models .model-list .model-item h3 {
+    font-size: 1.5rem;
     margin: auto;
   }
-  footer .logo-copyright-social .social-mail-footer .social-footer {
+  .container main .benefits {
+    width: 100%;
+    padding: 2% 0;
+    background-color: #424242;
+  }
+  .container main .benefits .benefit-list-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container main .benefits .benefit-list-image .benefit-list {
+    margin: 2% 0;
+  }
+  .container main .benefits .benefit-list-image .benefit-list .benefit-item {
+    width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: black;
+    padding: 2% 5%;
+    margin: 5% auto;
+    border-radius: 5rem;
+    text-align: left;
+  }
+  .container main .benefits .benefit-list-image .benefit-list .benefit-item h4 {
+    text-align: left;
+  }
+  .container main .benefits .benefit-list-image .benefit-list .benefit-item img {
+    margin: auto;
+    width: 4vw;
+  }
+  .container main .benefits .benefit-list-image .benefit-image {
+    margin: auto;
+    text-align: center;
+  }
+  .container main .benefits .benefit-list-image .benefit-image img {
+    width: 40rem;
+  }
+  .container main .some-cars {
+    padding: 2.5%;
+  }
+  .container main .some-cars h2 {
+    padding: 2.5%;
+  }
+  .container main .some-cars .some-images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container main .some-cars .some-images .car-item {
+    text-align: center;
     margin: auto;
   }
-  footer .logo-copyright-social .social-mail-footer .social-footer img {
+  .container main .some-cars .some-images .car-item img {
+    width: 20vw;
+  }
+  .container main .some-cars .some-images .car-item p {
+    font-size: 1.8rem;
+  }
+  .container main .review {
+    background-color: #424242;
+    width: 100%;
+    text-align: left;
+  }
+  .container main .review h2 {
+    text-align: center;
+    margin: auto;
+  }
+  .container main .review .description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container main .review .description img {
+    margin: 5%;
+    width: 30rem;
+    border-radius: 2rem;
+  }
+  .container main .review .description .review-message {
+    margin: 2%;
+    width: 50%;
+    margin: auto;
+    border-radius: 5rem;
+    padding: 2% 3%;
+  }
+  .container main .review .description .review-message h3,
+  .container main .review .description .review-message p {
+    text-align: left;
+  }
+  .container footer {
+    width: 100%;
+    text-align: center;
+    background-color: #313131;
+    padding: 1% 0;
+  }
+  .container footer .logo-copyright-social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+  }
+  .container footer .logo-copyright-social .logo-footer {
+    margin: auto;
+  }
+  .container footer .logo-copyright-social .logo-footer h1 {
+    font-size: 2.5vw;
+  }
+  .container footer .logo-copyright-social p {
+    font-size: 1.5vw;
+    margin: auto;
+  }
+  .container footer .logo-copyright-social .social-mail-footer {
+    margin: auto;
+  }
+  .container footer .logo-copyright-social .social-mail-footer .social-footer {
+    margin: auto;
+  }
+  .container footer .logo-copyright-social .social-mail-footer .social-footer img {
     width: 2rem;
     margin: 2% 3%;
   }
 }
 
-/*@media screen and (min-width: 1024px) {
-  header {
-    background-color: rgba(31, 31, 31, 1);
+@media (min-width: 1400px) {
+  .container {
+    width: 100%;
+  }
+  .container header {
+    background-color: #2c2c2c;
+    padding: 0.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container header .logo {
+    text-decoration: none;
+    color: red;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: auto;
+  }
+  .container header .nav-bar {
+    width: 50%;
+  }
+  .container header .nav-bar ul {
+    width: 80%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+  }
+  .container header .nav-bar ul li {
+    margin: auto;
+    list-style: none;
+  }
+  .container header .nav-bar ul li a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+  }
+  .container header .nav-bar ul li a:hover {
+    color: red;
+  }
+  .container header .nav-bar ul li .home {
+    color: red;
+  }
+  .container header .btn {
+    display: none;
+  }
+  .container main {
+    width: 100%;
+  }
+  .container main .login-form {
     position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    padding: 1% 0;
-    a {
-      color: white;
-    }
-    .navigation {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin: auto;
-      .logo {
-        width: 25%;
-        margin: auto;
-        padding: 0.5%;
-        font-size: 2.4vw;
-      }
-      .nav_menu {
-        width: 65%;
-        margin: 0 auto;
-        transition: 0.4s;
-        border-radius: 1rem;
-      }
-      .nav_list {
-        margin: auto;
-        display: flex;
-        justify-content: end;
-        .nav_item {
-          margin: 1% 2%;
-          a {
-            font-size: 1.6vw;
-            color: white;
-          }
-        }
-      }
-      .nav_toggle {
-        display: none;
-      }
-    }
+    background-color: rgba(0, 0, 0, 0.815);
+    width: 30%;
+    border-radius: 2rem;
+    font-weight: bold;
+    color: white;
+    top: -100%;
+    left: 35%;
+    -webkit-transition: 1s;
+    transition: 1s;
   }
-  main {
-    width: 100%;
-    margin-top: 10%;
-    a {
-      text-decoration: none;
-      color: black;
-      font-weight: bold;
-    }
-    li {
-      list-style: none;
-    }
-    h1 {
-      color: white;
-      font-size: 2.2rem;
-      margin: 2% 0;
-    }
-    span {
-      color: rgba(198, 22, 22, 1);
-    }
-    h2 {
-      text-align: center;
-      font-size: 2em;
-      color: rgba(198, 22, 22, 1);
-      margin: 2% 0;
-    }
-    h3 {
-      font-size: 1.8rem;
-    }
-    h4 {
-      font-size: 1.6rem;
-      color: rgba(198, 22, 22, 1);
-      margin: 2% 0;
-    }
-    p {
-      margin: 2% 0;
-      font-size: 1.2rem;
-    }
-    .welcome-image {
-      width: 100%;
-      padding: 2%;
-      display: flex;
-      margin-top: 0%;
-      .welcome {
-        width: 40%;
-        top: 12rem;
-        margin: auto;
-        h1 {
-          color: white;
-          font-size: 2.4rem;
-          margin: 2% 0;
-        }
-        p {
-          margin: 2% 0;
-        }
-        button {
-          margin: 2% 0;
-          border: none;
-          background-color: rgba(198, 22, 22, 1);
-          font-size: 1rem;
-          padding: 2% 5%;
-          text-align: center;
-          border-radius: 2rem;
-          font-weight: bold;
-        }
-      }
-      .image {
-        display: none;
-        img {
-          width: 30rem;
-        }
-      }
-      .image2 {
-        margin: auto;
-        img {
-          width: 40vw;
-        }
-      }
-    }
-    .service {
-      .services-list {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        .service1,
-        .service2,
-        .service3,
-        .service4,
-        .service5,
-        .service6 {
-          background-color: rgb(49, 49, 49);
-          border: 2px solid rgba(31, 31, 31, 1);
-          width: 30%;
-          border-radius: 2rem;
-          margin: 2% auto;
-          text-align: center;
-          padding: 0.5rem;
-        }
-      }
-    }
-    .models {
-      margin: 2% 0;
-      .model-list {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        .model1,
-        .model2,
-        .model3,
-        .model4,
-        .model5,
-        .model6,
-        .model7,
-        .model8,
-        .model9,
-        .model10,
-        .model11,
-        .model12 {
-          display: flex;
-          width: 25%;
-          margin: 2% auto;
-          img {
-            margin: auto;
-            width: 5rem;
-          }
-          h3 {
-            margin: auto;
-          }
-        }
-      }
-    }
-    .benefits {
-      width: 100%;
-      margin: 2% 0;
-      .benefit-list-image {
-        display: flex;
-        .benefit-list {
-          margin: 2% 0;
-          .benefit1,
-          .benefit2,
-          .benefit3,
-          .benefit4 {
-            width: 70%;
-            display: flex;
-            margin: auto;
-            img {
-              margin: auto;
-              width: 5rem;
-            }
-          }
-        }
-        .benefit-image {
-          margin: auto;
-          text-align: center;
-          img {
-            margin: auto;
-            width: 50vw;
-          }
-        }
-      }
-    }
-    .some-cars {
-      .some-images {
-        display: flex;
-        .car1,
-        .car2,
-        .car3 {
-          text-align: center;
-          margin: auto;
-          img {
-            width: 30vw;
-          }
-          p {
-            font-size: 1.8rem;
-          }
-        }
-      }
-    }
-    .review {
-      display: flex;
-      img {
-        margin: 5%;
-        width: 35vw;
-      }
-      .review-message {
-        margin: 2%;
-      }
-    }
+  .container main .login-form h1 {
+    font-size: 2rem;
+    color: red;
+    text-align: center;
+    padding: 2% 0;
   }
-  footer {
+  .container main .login-form p {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .container main .login-form form {
+    margin: 2rem auto;
+    font-size: 1.5rem;
+    padding: 0 5%;
+  }
+  .container main .login-form form input {
+    width: 20rem;
+    padding: 0.5% 1%;
+    border-radius: 1rem;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .container main .form {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.815);
+    width: 50%;
+    text-align: center;
+    border-radius: 2rem;
+    font-weight: bold;
+    color: white;
+    top: -100%;
+    left: 25%;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .container main .form h1 {
+    font-size: 2rem;
+    color: red;
+  }
+  .container main .form p {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .container main .form form {
+    margin: 2rem auto;
+    font-size: 1.5rem;
+  }
+  .container main .form form input {
+    width: 15rem;
+    padding: 0.5% 1%;
+    border-radius: 1rem;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .container main .form form select {
+    width: 15rem;
+    padding: 0.5% 1%;
+    border-radius: 1rem;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .container main .show {
+    top: 5%;
+  }
+  .container main .welcome-image-message {
+    width: 100%;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #222222;
+  }
+  .container main .welcome-image-message .welcome-image {
+    margin: auto;
+    width: 45%;
+  }
+  .container main .welcome-image-message .welcome-image img {
+    width: 40vw;
+  }
+  .container main .welcome-image-message .welcome-message {
+    width: 45%;
+    margin: auto;
+    padding: 2%;
+    text-align: left;
+  }
+  .container main .welcome-image-message .welcome-message h1 {
+    font-size: 3.4rem;
+    color: white;
+  }
+  .container main .welcome-image-message .welcome-message h1 span {
+    color: red;
+  }
+  .container main .welcome-image-message .welcome-message p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 2% 0;
+  }
+  .container main .services {
+    width: 100%;
+    margin: auto;
+    padding: 3% 5%;
+    background-color: #313131;
+  }
+  .container main .services .services-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .container main .services .services-list .service-item {
+    width: 30%;
+    margin: 2% auto;
+    padding: 1%;
+    background-color: grey;
+    border-radius: 2rem;
+    text-align: center;
+  }
+  .container main .models {
+    padding: 5% 2%;
+    background-color: #222222;
+  }
+  .container main .models .model-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+  }
+  .container main .models .model-list .model-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 24%;
+    margin: 1.5% auto;
+    padding: 1% 2%;
+    background-color: #424242;
+    text-align: center;
+    border-radius: 2rem;
+  }
+  .container main .models .model-list .model-item img {
+    margin: auto;
+    width: 5rem;
+  }
+  .container main .models .model-list .model-item h3 {
+    margin: auto;
+  }
+  .container main .benefits {
+    width: 100%;
+    padding: 2% 0;
+    background-color: #424242;
+  }
+  .container main .benefits .benefit-list-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container main .benefits .benefit-list-image .benefit-list {
+    margin: 2% 0;
+  }
+  .container main .benefits .benefit-list-image .benefit-list .benefit-item {
+    width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: black;
+    padding: 2% 5%;
+    margin: 5% auto;
+    border-radius: 5rem;
+    text-align: left;
+  }
+  .container main .benefits .benefit-list-image .benefit-list .benefit-item h4 {
+    text-align: left;
+  }
+  .container main .benefits .benefit-list-image .benefit-list .benefit-item img {
+    margin: auto;
+    width: 4vw;
+  }
+  .container main .benefits .benefit-list-image .benefit-image {
+    margin: auto;
+    text-align: center;
+  }
+  .container main .benefits .benefit-list-image .benefit-image img {
+    width: 60rem;
+  }
+  .container main .some-cars {
+    padding: 2% 4%;
+    background-color: #222222;
+  }
+  .container main .some-cars h2 {
+    padding: 2.5%;
+  }
+  .container main .some-cars .some-images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container main .some-cars .some-images .car-item {
+    text-align: center;
+    margin: auto;
+  }
+  .container main .some-cars .some-images .car-item img {
+    width: 20vw;
+  }
+  .container main .some-cars .some-images .car-item p {
+    font-size: 1.8rem;
+  }
+  .container main .review {
+    background-color: #424242;
+    width: 100%;
+    text-align: left;
+    padding: 2% 5%;
+  }
+  .container main .review h2 {
+    text-align: center;
+    margin: auto;
+  }
+  .container main .review .description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container main .review .description img {
+    margin: 5%;
+    width: 30rem;
+    border-radius: 2rem;
+  }
+  .container main .review .description .review-message {
+    margin: 2%;
+    width: 50%;
+    margin: auto;
+    border-radius: 5rem;
+    padding: 2% 3%;
+  }
+  .container main .review .description .review-message h3,
+  .container main .review .description .review-message p {
+    text-align: left;
+  }
+  .container footer {
     width: 100%;
     text-align: center;
-    background-color: rgb(49, 49, 49);
+    background-color: #313131;
     padding: 1% 0;
-    .logo-copyright-social {
-      display: flex;
-      margin: auto;
-      .logo-footer {
-        margin: auto;
-        h1 {
-          font-size: 2vw;
-        }
-      }
-      p {
-        font-size: 1.2vw;
-      }
-      .social-mail-footer {
-        margin: auto;
-        .social-footer {
-          margin: auto;
-          img {
-            width: 2rem;
-            margin: 2% 3%;
-          }
-        }
-      }
-    }
+  }
+  .container footer .logo-copyright-social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+  }
+  .container footer .logo-copyright-social .logo-footer {
+    margin: auto;
+  }
+  .container footer .logo-copyright-social .logo-footer h1 {
+    font-size: 2vw;
+  }
+  .container footer .logo-copyright-social p {
+    font-size: 1.2vw;
+    margin: auto;
+  }
+  .container footer .logo-copyright-social .social-mail-footer {
+    margin: auto;
+  }
+  .container footer .logo-copyright-social .social-mail-footer .social-footer {
+    margin: auto;
+  }
+  .container footer .logo-copyright-social .social-mail-footer .social-footer img {
+    width: 2rem;
+    margin: 2% 3%;
   }
 }
-*/
-/*# sourceMappingURL=home.css.map */
+/*# sourceMappingURL=Home.css.map */

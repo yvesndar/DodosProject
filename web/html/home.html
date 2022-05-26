@@ -4,51 +4,129 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/home.css" />
+    <title>DODOS Ltd</title>
+    <link rel="stylesheet" href="/css/Home.css" />
   </head>
   <body>
-    <header>
-      <nav id="navigation" class="navigation">
-        <a href="" class="logo">GORILLA MOTORS</a>
-        <div id="nav-menu" class="nav_menu">
-          <ul id="nav_list" class="nav_list">
-            <li class="nav_item">
-              <a href="/html/home.html" id="home" class="links">Home</a>
+    <div class="overlay hidden"></div>
+    <div class="container">
+      <!-- navigation bar -->
+      <header>
+        <!-- logo for the company -->
+        <a href="/html/Home.html" class="logo">DODOS Ltd</a>
+        <div class="nav-bar" id="nav-bar">
+          <!-- navigation links -->
+          <ul class="nav-link" id="nav-link">
+            <li class="nav-item">
+              <a href="/html/Home.html" class="home">Home</a>
             </li>
-            <li class="nav_item">
-              <a href="/html/about.html" id="About" class="links">About</a>
+            <li class="nav-item">
+              <a href="" class="about">About</a>
             </li>
-            <li class="nav_item">
-              <a href="/html/rent.html" id="rental" class="links">Rentals</a>
+            <li class="nav-item">
+              <a href="/html/Rent.html" class="rent">Rental</a>
             </li>
-            <li class="nav_item">
-              <a href="" id="buy" class="links">Buy a Car</a>
+            <li class="nav-item">
+              <a href="/html/Buy.html" class="buy">Buy</a>
             </li>
-            <li class="nav_item">
-              <a href="" id="repair" class="links">Repair Shop</a>
+            <li class="nav-item">
+              <a href="" class="repair">Repair</a>
             </li>
-            <li class="nav_item">
-              <a href="" id="order" class="links">Order a Car</a>
+            <li class="nav-item">
+              <a href="" class="contact">Contact</a>
             </li>
           </ul>
         </div>
-        <div id="nav-toggle" class="nav_toggle">
-          <img
-            alt="toggle"
-            onclick="togglemenu()"
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAIBJREFUSEvtVUEOgDAI616m/lxfNmMixrBgids4sePoaCiUFUw+ZXJ+hBPsABajqiu23TEvrqmgEsmkYi/OJNDSSUJNwHBJwBWwNLR63d3kr/E7AKyOMX3j4o02fHPoHngd6sWlk//7gO0YvZtkOJp7lsh62E2QTn4UCP+Th6+KE3LlOBnu4XThAAAAAElFTkSuQmCC"
-          />
-        </div>
-      </nav>
-    </header>
+        <!-- button for the menu of the small devices -->
+        <img
+          class="btn"
+          src="/icon/menu-button-of-three-horizontal-lines.png"
+          alt=""
+        />
+      </header>
     <main>
-      <div id="welcome-image" class="welcome-image">
-        <div id="image" class="image">
+      <div class="form">
+      <h1>Sign Up</h1>
+      <p>please fill the form to create an Account</p>
+      <hr />
+      <form class="names" id="names">
+        <label for="fname"><b>First Name</b></label>
+        <input
+          type="text"
+          placeholder="First name"
+          name="first-name"
+          required
+        />
+        <label for="lname"><b>Last Name</b></label>
+        <input type="text" placeholder="Last name" name="last-name" required />
+      </form>
+      <form class="email-password" id="email-passowrd">
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required />
+        <label for="psw"><b>Password</b></label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="psw"
+          required
+        />
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input
+          type="password"
+          placeholder="Repeat Password"
+          name="psw-repeat"
+          required
+        />
+      </form>
+      <form class="contact-address" id="contact-address">
+        <label for="identification"><b>ID number/Passport</b></label>
+        <input
+          type="number"
+          placeholder="id/passport"
+          name="identification"
+          required
+        />
+        <label for="address">Address</label>
+        <select name="province" id="province">
+          <option value=" "></option>
+          <option value="kicukiro">Kicukiro</option>
+          <option value="nyarugenge">Nyarugenge</option>
+          <option value="gasabo">Gasabo</option>
+        </select>
+      </form>
+      <button type="button" class="cancel-btn">Cancel</button>
+      <button type="button" class="submit-btn">Submit</button>
+    </div>
+    <div class="login-form">
+      <h1>Log In</h1>
+      <hr>
+      <form action="">
+        <label for="email">Username/Email</label>
+        <input type="text"
+          placeholder="username"
+          name="username"
+          required
+        />
+      </form>
+      <form action="">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          placeholder="Password"
+          name="password"
+          required
+        />
+      </form>
+      <button>Submit</button>
+    </div>
+      <div id="section1" class="welcome-image-message">
+        <div id="welcome-image" class="welcome-image">
           <img src="/images/Audi-SQ5_0.png" alt="" />
         </div>
-        <div id="welcome" class="welcome">
-          <h1>WELCOME TO <span>GORILLA MOTORS</span></h1>
+        <div id="welcome-message" class="welcome-message">
+          <h1>
+            WELCOME TO <span><br />DODOS Limited</span>
+          </h1>
           <p>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
@@ -56,16 +134,14 @@
             et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
             Lorem ipsum dolor sit amet.
           </p>
-          <button type="button">BOOK NOW</button>
-        </div>
-        <div id="image2" class="image2">
-          <img src="/images/Audi-SQ5_0.png" alt="" />
+          <button id="sign-up" class="sign-up">Sign Up</button>
+          <button id="log-in" class="log-in">Log In</button>
         </div>
       </div>
-      <div id="service" class="service">
+      <div id="section2" class="services">
         <h2>OUR SERVICES</h2>
         <div class="services-list">
-          <div class="service1">
+          <div class="service-item">
             <h4>CAR RENTAL</h4>
             <p>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -73,7 +149,7 @@
               erat, sed diam
             </p>
           </div>
-          <div class="service2">
+          <div class="service-item">
             <h4>CAR RENTAL</h4>
             <p>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -81,7 +157,7 @@
               erat, sed diam
             </p>
           </div>
-          <div class="service3">
+          <div class="service-item">
             <h4>CAR RENTAL</h4>
             <p>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -89,7 +165,7 @@
               erat, sed diam
             </p>
           </div>
-          <div class="service4">
+          <div class="service-item">
             <h4>CAR RENTAL</h4>
             <p>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -97,7 +173,7 @@
               erat, sed diam
             </p>
           </div>
-          <div class="service5">
+          <div class="service-item">
             <h4>CAR RENTAL</h4>
             <p>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -105,7 +181,7 @@
               erat, sed diam
             </p>
           </div>
-          <div class="service6">
+          <div class="service-item">
             <h4>CAR RENTAL</h4>
             <p>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -115,64 +191,64 @@
           </div>
         </div>
       </div>
-      <div id="models" class="models">
+      <div id="section3" class="models">
         <h2>OUR MODELS</h2>
         <div class="model-list">
-          <div class="model1">
+          <div class="model-item">
             <img src="/images/n_200px-Mercedes-Logosvg.png" alt="" />
             <h3>MERCEDS BENZ</h3>
           </div>
-          <div class="model2">
+          <div class="model-item">
             <img src="/images/Hyundai-Logo.png" alt="" />
-            <h3>MERCEDS BENZ</h3>
+            <h3>HYUNDAI</h3>
           </div>
-          <div class="model3">
+          <div class="model-item">
             <img src="/images/Land_Rover_logo.png" alt="" />
-            <h3>MERCEDS BENZ</h3>
+            <h3>LAND ROVER</h3>
           </div>
-          <div class="model4">
+          <div class="model-item">
             <img src="/images/n_048px-BMWsvg.png" alt="" />
-            <h3>MERCEDS BENZ</h3>
+            <h3>BMW</h3>
           </div>
-          <div class="model5">
+          <div class="model-item">
             <img src="/images/n_0064-logo-ferrari-3d.png" alt="" />
-            <h3>MERCEDS BENZ</h3>
+            <h3>FERRARI</h3>
           </div>
-          <div class="model6">
+          <div class="model-item">
             <img src="/images/n_0644-Peugeot.png" alt="" />
-            <h3>MERCEDS BENZ</h3>
+            <h3>PEUGEOT</h3>
           </div>
-          <div class="model7">
+          <div class="model-item">
             <img src="/images/n_0348-Lamborghini.png" alt="" />
-            <h3>MERCEDS BENZ</h3>
+            <h3>LAMBORGINI</h3>
           </div>
-          <div class="model8">
+          <div class="model-item">
             <img src="/images/n_5326-Sticker-Porsche-Logo.png" alt="" />
-            <h3>MERCEDS BENZ</h3>
+            <h3>PORCHE</h3>
           </div>
-          <div class="model9">
+          <div class="model-item">
             <img src="/images/purepngcom-citroen-logocitroen.png" alt="" />
-            <h3>MERCEDS BENZ</h3>
+            <h3>CITROEN</h3>
           </div>
-          <div class="model10">
+          <div class="model-item"">
             <img src="/images/Toyota-logo.png" alt="" />
-            <h3>MERCEDS BENZ</h3>
+            <h3>TOYOTA</h3>
           </div>
-          <div class="model11">
+          <div class="model-item"">
             <img src="/images/volkswagen-logo.png" alt="" />
-            <h3>MERCEDS BENZ</h3>
+            <h3>VOLKSWAGEN</h3>
           </div>
-          <div class="model12">
+          <div class="model-item"">
             <img src="/images/audi-logo.png" alt="" />
-            <h3>MERCEDS BENZ</h3>
+            <h3>AUDI</h3>
           </div>
         </div>
-      </div>
-      <div id="benefits" class="benefits">
+        </div>
+        <div id="section4" class="benefits">
         <h2>BENEFITS</h2>
         <div class="benefit-list-image">
           <div class="benefit-list">
-            <div class="benefit1">
+            <div class="benefit-item">
               <img src="/icon/check-regular-24.png" alt="" />
               <div class="benefit1-desript">
                 <h4>LUXURY</h4>
@@ -182,7 +258,7 @@
                 </p>
               </div>
             </div>
-            <div class="benefit2">
+            <div class="benefit-item">
               <img src="/icon/check-regular-24.png" alt="" />
               <div class="benefit1-desript">
                 <h4>LUXURY</h4>
@@ -192,7 +268,7 @@
                 </p>
               </div>
             </div>
-            <div class="benefit3">
+            <div class="benefit-item">
               <img src="/icon/check-regular-24.png" alt="" />
               <div class="benefit1-desript">
                 <h4>LUXURY</h4>
@@ -202,7 +278,7 @@
                 </p>
               </div>
             </div>
-            <div class="benefit4">
+            <div class="benefit-item">
               <img src="/icon/check-regular-24.png" alt="" />
               <div class="benefit1-desript">
                 <h4>LUXURY</h4>
@@ -217,49 +293,51 @@
             <img src="/images/mgzs.png" alt="" />
           </div>
         </div>
-      </div>
-      <div class="some-cars">
-        <h2>SOME OF OUR CARS</h2>
-        <div class="some-images">
-          <div class="car1">
-            <img src="/images/purepngcom-red-volkswagen-tigu_ft.png" alt="" />
-            <p><strong>SUV</strong></p>
-          </div>
-          <div class="car2">
-            <img src="/images/n_9-298053_mercedes-benz-png-f.png" alt="" />
-            <p><strong>SEDAN</strong></p>
-          </div>
-          <div class="car3">
-            <img src="/images/n_65-1656357_2017-jeep-wrangle.png" alt="" />
-            <p><strong>OFF ROAD</strong></p>
+        </div>
+        <div id="section5" class="some-cars">
+          <h2>SOME OF OUR CARS</h2>
+          <div class="some-images">
+            <div class="car-item">
+              <img src="/images/purepngcom-red-volkswagen-tigu_ft.png" alt="" />
+              <p><strong>SUV</strong></p>
+            </div>
+            <div class="car-item">
+              <img src="/images/n_9-298053_mercedes-benz-png-f.png" alt="" />
+              <p><strong>SEDAN</strong></p>
+            </div>
+            <div class="car-item">
+              <img src="/images/n_65-1656357_2017-jeep-wrangle.png" alt="" />
+              <p><strong>OFF ROAD</strong></p>
+            </div>
           </div>
         </div>
-      </div>
-      <div id="review" class="review">
-        <img src="/images/erik-mclean-ZRns2R5azu0-unspla.png" alt="" />
-        <div class="review-message">
-          <h4>REVIEWS</h4>
-          <h3>LOREM IPSUM DOLOR SIT AMET CONSETETUR SADIPSCING</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-            no sea takimata sanctus est Lorem ipsum dolor sit amet
-          </p>
+        <div id="section6" class="review">
+          <h2>REVIEWS</h2>
+          <div class="description">
+            <img src="/images/erik-mclean-ZRns2R5azu0-unspla.png" alt="" />
+            <div class="review-message">
+              <h3>LOREM IPSUM DOLOR SIT AMET CONSETETUR SADIPSCING</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+                Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+                sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                no sea takimata sanctus est Lorem ipsum dolor sit amet
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
     </main>
     <footer>
       <div id="logo-copyright-social" class="logo-copyright-social">
         <div class="logo-footer">
           <h1>GORILLA MOTORS</h1>
         </div>
-        <p>2021 GORILLA MOTORS. All right reserved | A site by Grit</p>
+        <p>2021 GORILLA MOTORS. All right reserved | &copy A site by Grit</p>
         <div class="social-mail-footer">
           <div class="social-footer">
             <img src="/icon/facebook.png" alt="" />
@@ -271,7 +349,9 @@
           </div>
         </div>
       </div>
-    </footer>
-    <script src="/java/home.js"></script>
+      </footer>
+    </div>
+    
+    <script src="/js/Script.js"></script>
   </body>
 </html>
