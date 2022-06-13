@@ -1,0 +1,1011 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  //background-color: rgb(34, 34, 34);
+  h1 {
+    color: white;
+    font-size: 2.4rem;
+  }
+  h2 {
+    color: red;
+    font-size: 2rem;
+    text-align: center;
+  }
+  h3 {
+    color: red;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  h4 {
+    color: red;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  p {
+    color: white;
+  }
+  button {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    margin: 2% auto;
+    padding: 1% 2%;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 2rem;
+    transition: 0.5s;
+  }
+  button:hover {
+    padding: 1% 2%;
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .overlay {
+    transition: 0.5s;
+  }
+  .on {
+    position: absolute;
+    width: 100%;
+    height: 397.5vh;
+    margin: 0;
+    padding: 0%;
+    display: block;
+    opacity: 0.5;
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  .container {
+    width: 100%;
+    header {
+      background-color: rgb(44, 44, 44);
+      padding: 0.5rem;
+      display: flex;
+      .logo {
+        width: 30%;
+        text-decoration: none;
+        color: red;
+        font-size: 2rem;
+        font-weight: bold;
+        margin: auto;
+      }
+      .nav-bar {
+        width: 50%;
+        .nav-link {
+          width: 30%;
+          height: auto;
+          display: block;
+          margin: auto;
+          position: fixed;
+          background-color: rgba(0, 0, 0, 0.2);
+          padding: 1rem 0;
+          top: 0;
+          border-radius: 2rem;
+          right: -22rem;
+          transition: 0.5s;
+          li {
+            margin: auto;
+            list-style: none;
+            text-align: center;
+            margin: 1rem 0;
+            a {
+              font-size: 1.5rem;
+              font-weight: bold;
+              text-decoration: none;
+              color: white;
+            }
+            a:hover {
+              color: red;
+            }
+            .rent {
+              color: red;
+            }
+          }
+        }
+        .show {
+          right: 5rem;
+        }
+      }
+      .btn {
+        width: 2rem;
+      }
+    }
+    main {
+      background-color: rgb(44, 44, 44);
+      width: 100%;
+      a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+      }
+      li {
+        list-style: none;
+      }
+      span {
+        color: rgba(198, 22, 22, 1);
+      }
+      h2 {
+        text-align: center;
+        font-size: 1.4em;
+        color: rgba(198, 22, 22, 1);
+        margin: 2% 0;
+      }
+      h3 {
+        font-size: 1.2rem;
+      }
+      h4 {
+        font-size: 1rem;
+        color: rgba(198, 22, 22, 1);
+        margin: 2% 0;
+      }
+      p {
+        margin: 2% 0;
+        font-size: 1rem;
+      }
+      .rental-welcome-image {
+        padding: 2rem 0;
+        background-color: rgba(49, 49, 49, 1);
+        .image {
+          margin: 3% auto;
+          text-align: center;
+          img {
+            width: 75vw;
+          }
+        }
+        .welcome {
+          width: 80%;
+          margin: auto;
+          button {
+            padding: 1rem 2rem;
+            border-radius: 2rem;
+            border: none;
+            background-color: #c61616;
+            color: white;
+            font-weight: bold;
+          }
+        }
+        .image2 {
+          display: none;
+        }
+      }
+      .rent-list {
+        padding: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .rent-item {
+          background-color: grey;
+          width: 30rem;
+          border-radius: 2rem;
+          margin: 2rem auto;
+          text-align: center;
+          img {
+            width: 20rem;
+          }
+          .details {
+            font-weight: bold;
+          }
+          .year {
+            color: black;
+            font-weight: bold;
+          }
+          button {
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 1rem;
+            margin-bottom: 2rem;
+          }
+          button:hover {
+            background-color: #c61616;
+            color: white;
+          }
+        }
+      }
+    }
+    footer {
+      width: 100%;
+      text-align: center;
+      background-color: rgb(49, 49, 49);
+      padding: 1% 0;
+      .logo-copyright-social {
+        margin: auto;
+        .logo-footer {
+          margin: auto;
+          h1 {
+            font-size: 2.5vw;
+          }
+        }
+        p {
+          font-size: 2vw;
+          margin: auto;
+        }
+        .social-mail-footer {
+          margin: auto;
+          .social-footer {
+            margin: auto;
+            img {
+              width: 2rem;
+              margin: 2%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .overlay {
+    transition: 0.5s;
+  }
+  .on {
+    position: absolute;
+    width: 100%;
+    height: 397.5vh;
+    margin: 0;
+    padding: 0%;
+    display: block;
+    opacity: 0.5;
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  .container {
+    width: 100%;
+    header {
+      background-color: rgb(44, 44, 44);
+      padding: 0.5rem;
+      display: flex;
+      .logo {
+        width: 30%;
+        text-decoration: none;
+        color: red;
+        font-size: 2rem;
+        font-weight: bold;
+        margin: auto;
+      }
+      .nav-bar {
+        width: 50%;
+        .nav-link {
+          width: 30%;
+          height: auto;
+          display: block;
+          margin: auto;
+          position: fixed;
+          background-color: rgba(0, 0, 0, 0.2);
+          padding: 1rem 0;
+          top: 0;
+          border-radius: 2rem;
+          right: -22rem;
+          transition: 0.5s;
+          li {
+            margin: auto;
+            list-style: none;
+            text-align: center;
+            margin: 1rem 0;
+            a {
+              font-size: 1.5rem;
+              font-weight: bold;
+              text-decoration: none;
+              color: white;
+            }
+            a:hover {
+              color: red;
+            }
+            .rent {
+              color: red;
+            }
+          }
+        }
+        .show {
+          right: 5rem;
+        }
+      }
+      .btn {
+        width: 2rem;
+      }
+    }
+    main {
+      background-color: rgb(44, 44, 44);
+      width: 100%;
+      a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+      }
+      li {
+        list-style: none;
+      }
+      span {
+        color: rgba(198, 22, 22, 1);
+      }
+      h2 {
+        text-align: center;
+        font-size: 1.4em;
+        color: rgba(198, 22, 22, 1);
+        margin: 2% 0;
+      }
+      h3 {
+        font-size: 1.2rem;
+      }
+      h4 {
+        font-size: 1rem;
+        color: rgba(198, 22, 22, 1);
+        margin: 2% 0;
+      }
+      p {
+        margin: 2% 0;
+        font-size: 1rem;
+      }
+      .rental-welcome-image {
+        padding: 2rem 0;
+        background-color: rgba(49, 49, 49, 1);
+        .image {
+          margin: 3% auto;
+          text-align: center;
+          img {
+            width: 75vw;
+          }
+        }
+        .welcome {
+          width: 80%;
+          margin: auto;
+          button {
+            padding: 1rem 2rem;
+            border-radius: 2rem;
+            border: none;
+            background-color: #c61616;
+            color: white;
+            font-weight: bold;
+          }
+        }
+        .image2 {
+          display: none;
+        }
+      }
+      .rent-list {
+        padding: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .rent-item {
+          background-color: grey;
+          width: 30rem;
+          border-radius: 2rem;
+          margin: 2rem auto;
+          text-align: center;
+          img {
+            width: 20rem;
+          }
+          .details {
+            font-weight: bold;
+          }
+          .year {
+            color: black;
+            font-weight: bold;
+          }
+          button {
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 1rem;
+            margin-bottom: 2rem;
+          }
+          button:hover {
+            background-color: #c61616;
+            color: white;
+          }
+        }
+      }
+    }
+    footer {
+      width: 100%;
+      text-align: center;
+      background-color: rgb(49, 49, 49);
+      padding: 1% 0;
+      .logo-copyright-social {
+        margin: auto;
+        .logo-footer {
+          margin: auto;
+          h1 {
+            font-size: 2.5vw;
+          }
+        }
+        p {
+          font-size: 2vw;
+          margin: auto;
+        }
+        .social-mail-footer {
+          margin: auto;
+          .social-footer {
+            margin: auto;
+            img {
+              width: 2rem;
+              margin: 2%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .overlay {
+    transition: 0.5s;
+  }
+  .on {
+    position: absolute;
+    width: 100%;
+    height: 397.5vh;
+    margin: 0;
+    padding: 0%;
+    display: block;
+    opacity: 0.5;
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  .container {
+    width: 100%;
+    header {
+      background-color: rgb(44, 44, 44);
+      padding: 0.5rem;
+      display: flex;
+      .logo {
+        width: 30%;
+        text-decoration: none;
+        color: red;
+        font-size: 2rem;
+        font-weight: bold;
+        margin: auto;
+      }
+      .nav-bar {
+        width: 50%;
+        .nav-link {
+          width: 30%;
+          height: auto;
+          display: block;
+          margin: auto;
+          position: fixed;
+          background-color: rgba(0, 0, 0, 0.2);
+          padding: 1rem 0;
+          top: -25rem;
+          border-radius: 2rem;
+          right: 5rem;
+          transition: 0.5s;
+          li {
+            margin: auto;
+            list-style: none;
+            text-align: center;
+            margin: 1rem 0;
+            a {
+              font-size: 1.5rem;
+              font-weight: bold;
+              text-decoration: none;
+              color: white;
+            }
+            a:hover {
+              color: red;
+            }
+            .rent {
+              color: red;
+            }
+          }
+        }
+        .show {
+          top: 0rem;
+        }
+      }
+      .btn {
+        width: 2rem;
+      }
+    }
+    main {
+      background-color: rgb(44, 44, 44);
+      width: 100%;
+      a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+      }
+      li {
+        list-style: none;
+      }
+      span {
+        color: rgba(198, 22, 22, 1);
+      }
+      h2 {
+        text-align: center;
+        font-size: 1.4em;
+        color: rgba(198, 22, 22, 1);
+        margin: 2% 0;
+      }
+      h3 {
+        font-size: 1.2rem;
+      }
+      h4 {
+        font-size: 1rem;
+        color: rgba(198, 22, 22, 1);
+        margin: 2% 0;
+      }
+      p {
+        margin: 2% 0;
+        font-size: 1rem;
+      }
+      .rental-welcome-image {
+        padding: 2rem 0;
+        background-color: rgba(49, 49, 49, 1);
+        .image {
+          margin: 3% auto;
+          text-align: center;
+          img {
+            width: 75vw;
+          }
+        }
+        .welcome {
+          width: 80%;
+          margin: auto;
+          button {
+            padding: 1rem 2rem;
+            border-radius: 2rem;
+            border: none;
+            background-color: #c61616;
+            color: white;
+            font-weight: bold;
+          }
+        }
+        .image2 {
+          display: none;
+        }
+      }
+      .rent-list {
+        padding: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .rent-item {
+          background-color: grey;
+          width: 30rem;
+          border-radius: 2rem;
+          margin: 2rem auto;
+          text-align: center;
+          img {
+            width: 20rem;
+          }
+          .details {
+            font-weight: bold;
+          }
+          .year {
+            color: black;
+            font-weight: bold;
+          }
+          button {
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 1rem;
+            margin-bottom: 2rem;
+          }
+          button:hover {
+            background-color: #c61616;
+            color: white;
+          }
+        }
+      }
+    }
+    footer {
+      width: 100%;
+      text-align: center;
+      background-color: rgb(49, 49, 49);
+      padding: 1% 0;
+      .logo-copyright-social {
+        margin: auto;
+        .logo-footer {
+          margin: auto;
+          h1 {
+            font-size: 2.5vw;
+          }
+        }
+        p {
+          font-size: 2vw;
+          margin: auto;
+        }
+        .social-mail-footer {
+          margin: auto;
+          .social-footer {
+            margin: auto;
+            img {
+              width: 2rem;
+              margin: 2%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .overlay {
+    transition: 0.5s;
+  }
+  .on {
+    position: absolute;
+    width: 100%;
+    height: 397.5vh;
+    margin: 0;
+    padding: 0%;
+    display: block;
+    opacity: 0.5;
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  .container {
+    width: 100%;
+    header {
+      background-color: rgb(44, 44, 44);
+      padding: 0.5rem;
+      display: flex;
+      .logo {
+        width: 30%;
+        text-decoration: none;
+        color: red;
+        font-size: 2rem;
+        font-weight: bold;
+        margin: auto;
+      }
+      .nav-bar {
+        width: 50%;
+        ul {
+          width: 90%;
+          height: 100%;
+          display: flex;
+          margin: auto;
+          li {
+            margin: auto;
+            list-style: none;
+
+            a {
+              font-size: 1.5rem;
+              font-weight: bold;
+              text-decoration: none;
+              color: white;
+            }
+            a:hover {
+              color: red;
+            }
+            .buy {
+              color: red;
+            }
+          }
+        }
+      }
+      .btn {
+        display: none;
+      }
+    }
+    main {
+      background-color: rgb(44, 44, 44);
+      width: 100%;
+      a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+      }
+      li {
+        list-style: none;
+      }
+      span {
+        color: rgba(198, 22, 22, 1);
+      }
+      h2 {
+        text-align: center;
+        font-size: 1.4em;
+        color: rgba(198, 22, 22, 1);
+        margin: 2% 0;
+      }
+      h3 {
+        font-size: 1.2rem;
+      }
+      h4 {
+        font-size: 1rem;
+        color: rgba(198, 22, 22, 1);
+        margin: 2% 0;
+      }
+      p {
+        margin: 2% 0;
+        font-size: 1rem;
+      }
+      .rental-welcome-image {
+        padding: 2rem 0;
+        display: flex;
+        background-color: rgba(49, 49, 49, 1);
+        .image {
+          display: none;
+        }
+        .welcome {
+          width: 30%;
+          margin: auto;
+          button {
+            padding: 1rem 2rem;
+            border-radius: 2rem;
+            border: none;
+            background-color: #c61616;
+            color: white;
+            font-weight: bold;
+          }
+        }
+        .image2 {
+          margin: 3% auto;
+          img {
+            width: 45vw;
+          }
+        }
+      }
+      .rent-list {
+        padding: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .rent-item {
+          background-color: grey;
+          width: 30rem;
+          border-radius: 2rem;
+          margin: 2rem auto;
+          text-align: center;
+          img {
+            width: 20rem;
+          }
+          .details {
+            font-weight: bold;
+          }
+          .year {
+            color: black;
+            font-weight: bold;
+          }
+          button {
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 1rem;
+            margin-bottom: 2rem;
+          }
+          button:hover {
+            background-color: #c61616;
+            color: white;
+          }
+        }
+      }
+    }
+    footer {
+      width: 100%;
+      text-align: center;
+      background-color: rgb(49, 49, 49);
+      padding: 1% 0;
+      .logo-copyright-social {
+        display: flex;
+        margin: auto;
+        .logo-footer {
+          margin: auto;
+          h1 {
+            font-size: 2.5vw;
+          }
+        }
+        p {
+          font-size: 1.5vw;
+          margin: auto;
+        }
+        .social-mail-footer {
+          margin: auto;
+          .social-footer {
+            margin: auto;
+            img {
+              width: 2rem;
+              margin: 2% 3%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1400px) {
+  .overlay {
+    transition: 0.5s;
+  }
+  .on {
+    position: absolute;
+    width: 100%;
+    height: 397.5vh;
+    margin: 0;
+    padding: 0%;
+    display: block;
+    opacity: 0.5;
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  .container {
+    width: 100%;
+    header {
+      background-color: rgb(44, 44, 44);
+      padding: 0.5rem;
+      display: flex;
+      .logo {
+        text-decoration: none;
+        color: red;
+        font-size: 2rem;
+        font-weight: bold;
+        margin: auto;
+      }
+      .nav-bar {
+        width: 50%;
+        ul {
+          width: 80%;
+          height: 100%;
+          display: flex;
+          margin: auto;
+          li {
+            margin: auto;
+            list-style: none;
+
+            a {
+              font-size: 1.5rem;
+              font-weight: bold;
+              text-decoration: none;
+              color: white;
+            }
+            a:hover {
+              color: red;
+            }
+            .buy {
+              color: red;
+            }
+          }
+        }
+      }
+      .btn {
+        display: none;
+      }
+    }
+    main {
+      background-color: rgb(44, 44, 44);
+      width: 100%;
+      a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+      }
+      li {
+        list-style: none;
+      }
+      span {
+        color: rgba(198, 22, 22, 1);
+      }
+      h2 {
+        text-align: center;
+        font-size: 1.4em;
+        color: rgba(198, 22, 22, 1);
+        margin: 2% 0;
+      }
+      h3 {
+        font-size: 1.2rem;
+      }
+      h4 {
+        font-size: 1rem;
+        color: rgba(198, 22, 22, 1);
+        margin: 2% 0;
+      }
+      p {
+        margin: 2% 0;
+        font-size: 1rem;
+      }
+      .car-for-sell {
+        display: flex;
+        .cars-images {
+          width: 50%;
+          .main-car {
+            width: 100%;
+            text-align: center;
+            img {
+              width: 50rem;
+            }
+          }
+          .similar-cars {
+            width: 100%;
+            text-align: center;
+            img {
+              margin: auto;
+            }
+          }
+        }
+        .car-details {
+          width: 50%;
+          padding: 2% 5%;
+          h1 {
+            color: black;
+            font-weight: bolder;
+          }
+          h3 {
+            color: black;
+            font-size: 2rem;
+            text-align: left;
+          }
+          p {
+            font-size: 1.5rem;
+          }
+        }
+      }
+      .inquiry {
+        width: 100%;
+        margin: auto;
+        font-weight: bold;
+        color: white;
+        background-color: rgb(40, 40, 40);
+        padding: 2% 0;
+        h1 {
+          text-align: center;
+        }
+        form {
+          font-size: 1.5rem;
+          padding: 1% 5%;
+          input {
+            width: 30%;
+            padding: 0.5% 1%;
+            border-radius: 1rem;
+            border: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+          }
+        }
+        select {
+          font-size: 1.5rem;
+          padding: 0.5% 5%;
+          border-radius: 1rem;
+          border-radius: 1rem;
+          border: none;
+          font-size: 1.2rem;
+          font-weight: bold;
+        }
+        textarea {
+          font-size: 1.5rem;
+          padding: 0.5% 2%;
+          border-radius: 1rem;
+          border-radius: 1rem;
+          border: none;
+          font-size: 1.2rem;
+          font-weight: bold;
+        }
+      }
+    }
+    footer {
+      width: 100%;
+      text-align: center;
+      background-color: rgb(49, 49, 49);
+      padding: 1% 0;
+      .logo-copyright-social {
+        display: flex;
+        margin: auto;
+        .logo-footer {
+          margin: auto;
+          h1 {
+            font-size: 2vw;
+          }
+        }
+        p {
+          font-size: 1.2vw;
+          margin: auto;
+        }
+        .social-mail-footer {
+          margin: auto;
+          .social-footer {
+            margin: auto;
+            img {
+              width: 2rem;
+              margin: 2% 3%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
