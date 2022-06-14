@@ -1,0 +1,213 @@
+* {
+  margin: 0%;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #222222;
+}
+
+body .overlay {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .hidden {
+  display: none;
+}
+
+body .container header {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1%;
+  background-color: #353535;
+}
+
+body .container header h1 {
+  margin: auto;
+  color: red;
+}
+
+body .container header .profile {
+  margin: auto;
+  width: 3.5%;
+  height: 80%;
+  background-color: grey;
+  border-radius: 50%;
+}
+
+body .container header input {
+  width: 20%;
+  height: 50px;
+  margin: auto;
+  border-radius: 2rem;
+  padding: 0 2%;
+  font-size: 1.2em;
+}
+
+body .container header button {
+  margin: auto;
+  border: none;
+  padding: 0.5% 1%;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 1rem;
+}
+
+body .container header button:hover {
+  background-color: red;
+}
+
+body .container header .car-details {
+  background-color: grey;
+  width: 40%;
+  position: absolute;
+  margin: auto;
+  padding: 1% 4%;
+  left: 30%;
+  top: -100%;
+}
+
+body .container header .car-details h1 {
+  color: black;
+}
+
+body .container header .car-details form label {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+body .container header .car-details form input {
+  width: 60%;
+  height: 50px;
+  margin: 2% 5%;
+  border-radius: 2rem;
+  padding: 0 2%;
+  font-size: 1.2em;
+}
+
+body .container header .car-details form button {
+  margin: 3% auto;
+  border: none;
+  padding: 2% 4%;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 1rem;
+}
+
+body .container header .car-details form button:hover {
+  background-color: red;
+}
+
+body .container header .show {
+  top: 10%;
+}
+
+body .container .button-tables {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #555555;
+}
+
+body .container .button-tables .btncontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 10%;
+  margin: 0 auto;
+}
+
+body .container .button-tables .btncontainer button {
+  border: none;
+  padding: 10% 5%;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+body .container .button-tables .btncontainer :hover {
+  background-color: #555555;
+  border: 2px solid black;
+}
+
+body .container .button-tables .btncontainer .selected {
+  background-color: red;
+}
+
+body .container .button-tables .tablescontainer {
+  width: 80%;
+  margin: auto;
+  float: left;
+  height: 1000px;
+  overflow-y: scroll;
+}
+
+body .container .button-tables .tablescontainer h1 {
+  text-align: center;
+  padding: 1% 0;
+}
+
+body .container .button-tables .tablescontainer .user {
+  display: none;
+}
+
+body .container .button-tables .tablescontainer .user table {
+  width: 100%;
+  margin: auto;
+}
+
+body .container .button-tables .tablescontainer .user table tr td,
+body .container .button-tables .tablescontainer .user table tr th {
+  border: 2px solid black;
+  padding: 1% 2%;
+}
+
+body .container .button-tables .tablescontainer .rent-request {
+  display: none;
+}
+
+body .container .button-tables .tablescontainer .rent-request table {
+  width: 100%;
+  margin: auto;
+}
+
+body .container .button-tables .tablescontainer .rent-request table tr td,
+body .container .button-tables .tablescontainer .rent-request table tr th {
+  border: 2px solid black;
+  padding: 1% 2%;
+}
+
+body .container .button-tables .tablescontainer .purchase-request {
+  display: none;
+}
+
+body .container .button-tables .tablescontainer .purchase-request table {
+  width: 100%;
+  margin: auto;
+}
+
+body .container .button-tables .tablescontainer .purchase-request table tr td,
+body .container .button-tables .tablescontainer .purchase-request table tr th {
+  border: 2px solid black;
+  padding: 1% 2%;
+}
+
+body .container .button-tables .tablescontainer .show {
+  display: block;
+}
+/*# sourceMappingURL=admin.css.map */

@@ -7,9 +7,11 @@ package Dodos.Model;
 
 import java.io.Serializable;
 import java.util.List;
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 
 /**
@@ -24,8 +26,10 @@ public class Car_Category implements Serializable {
     private String Name;
     private double Cost_Per_Day;
     private double Later_fee_Per_Hour;
-    @OneToMany
-    private List<Cars_to_Rental> Car_Plate_Number;
+   
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name="Category_number")
+    private List<Cars> Car_Plate_Number;
 
     public Car_Category(int Category_number, String Name, double Cost_Per_Day, double Later_fee_Per_Hour, List Car_Plate_Number) {
         this.Category_number = Category_number;
@@ -38,11 +42,11 @@ public class Car_Category implements Serializable {
     public Car_Category() {
     }
 
-    public List<Cars_to_Rental> getCar_Plate_Number() {
+    public List<Cars> getCar_Plate_Number() {
         return Car_Plate_Number;
     }
 
-    public void setCar_Plate_Number(List<Cars_to_Rental> Car_Plate_Number) {
+    public void setCar_Plate_Number(List<Cars> Car_Plate_Number) {
         this.Car_Plate_Number = Car_Plate_Number;
     }
 

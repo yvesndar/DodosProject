@@ -10,6 +10,7 @@ import Dodos.Model.Cars_to_Rental;
 import Dodos.Model.Rental_Client;
 import java.util.ArrayList;
 import java.util.List;
+import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -24,7 +25,7 @@ public class Client_Dao {
     
    
         public void saveClient(Rental_Client client){
-             Configuration conf = new Configuration().configure().addAnnotatedClass(Rental_Client.class);
+             Configuration conf = new Configuration().configure().addAnnotatedClass(Rental_Client.class).addAnnotatedClass(Cars_to_Rental.class);
         ServiceRegistry reg = new ServiceRegistryBuilder().applySettings(conf.getProperties()).build();
         SessionFactory cb = conf.buildSessionFactory(reg);
         Session ss = cb.openSession();
@@ -33,24 +34,34 @@ public class Client_Dao {
         tx.commit();
         ss.close();
         }
+        public List<Rental_Client> ViewClient(){
+         Configuration conf = new Configuration().configure().addAnnotatedClass(Rental_Client.class);
+        ServiceRegistry reg = new ServiceRegistryBuilder().applySettings(conf.getProperties()).build();
+        SessionFactory cb = conf.buildSessionFactory(reg);
+        Session ss = cb.openSession();
+        org.hibernate.Transaction tx = ss.beginTransaction();
+        Query q = ss.createQuery("from Rental_Client");
+        return q.list();
+    } 
+        
+        
+        
+        
          public static void main(String[] args) {
          Rental_Client pt=new Rental_Client();
           
          Cars_to_Rental t=new Cars_to_Rental();
-         t.setCar_Brand("Benx");
-         t.setCar_ID("123444");
+         t.setCar_Brand("Toyota");
+         
          t.setCar_Capacity("6");
-         t.setCar_Model_Year("2015");
-         t.setCar_Plate_Number("RAF 200T");
+        
+         t.setCar_Plate_Number("RAC100Y");
          t.setCar_Color("Black");
-         t.setCar_Rate("25");
+        
          //t.setCategory_number();
           List<Cars_to_Rental> cars = new ArrayList<Cars_to_Rental>();
          cars.add(t);
-         
-         
-         
-         pt.setClient_ID(120000123);
+         pt.setClient_ID(120000153);
          pt.setClient_Name("Tuyishime sosthen");
          pt.setClient_Contact("+250780444609");
          pt.setClient_Email("sosthenty@gmail.com");

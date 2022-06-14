@@ -22,33 +22,36 @@ import javax.persistence.OneToMany;
 public class Rental_Client implements Serializable {
     @Id
     @Column(length = 16)
-    private double Client_ID;
+    private long Client_ID;
     private String Client_Name;
     private String Client_Address;
     private String Client_Contact;
     private String Client_Email;
+    private String psw;
+    private String psw_repeat;
     @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name="Client_ID")
     private List<Cars_to_Rental> Car_ID;
-public Rental_Client(double Client_ID, String Client_Name, String Client_Address, String Client_Contact, String Client_Email,List Car_ID) {
-        this.Client_ID = Client_ID;
-        this.Client_Name = Client_Name;
-        this.Client_Address = Client_Address;
-        this.Client_Contact = Client_Contact;
-        this.Client_Email = Client_Email;
-        this.Car_ID=Car_ID;
-    }
+
+   
+
+   
+
 
     public Rental_Client() {
     }
 
-    public double getClient_ID() {
+    public long getClient_ID() {
         return Client_ID;
     }
 
-    public void setClient_ID(double Client_ID) {
+    public void setClient_ID(long Client_ID) {
         this.Client_ID = Client_ID;
     }
+
+   
+
+    
 
     public String getClient_Name() {
         return Client_Name;
@@ -88,6 +91,22 @@ public Rental_Client(double Client_ID, String Client_Name, String Client_Address
 
     public void setCar_ID(List<Cars_to_Rental> Car_ID) {
         this.Car_ID = Car_ID;
+    }
+
+    public String getPsw() {
+        return psw;
+    }
+
+    public void setPsw(String psw) {
+        this.psw = psw;
+    }
+
+    public String getPsw_repeat() {
+        return psw_repeat;
+    }
+
+    public void setPsw_repeat(String psw_repeat) {
+        this.psw_repeat = psw_repeat;
     }
     
 

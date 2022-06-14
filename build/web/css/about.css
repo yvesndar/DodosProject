@@ -1,0 +1,302 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 23, 2022, 1:05:52 PM
+    Author     : OTTOX
+*/
+
+  * {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  color: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #1f1f1f;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+body li {
+  list-style: none;
+}
+
+body h1 {
+  color: white;
+  font-size: 1rem;
+  margin: 2% 0;
+}
+
+body span {
+  color: #c61616;
+}
+
+body h2 {
+  text-align: center;
+  font-size: 1.5em;
+  color: #c61616;
+  margin: 2% 0;
+}
+
+body h3 {
+  font-size: 0.6rem;
+}
+
+body h4 {
+  font-size: 0.8em;
+  color: #c61616;
+  margin: 2% 0;
+}
+
+body p {
+  margin: 2% 0;
+  font-size: 0.5rem;
+}
+
+body #about {
+  color: #c61616;
+}
+
+@media screen and (max-width: 760px) {
+  header {
+    background-color: #1f1f1f;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 1% 0;
+  }
+  header a {
+    color: white;
+  }
+  header .navigation {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+  }
+  header .navigation .logo {
+    width: 50%;
+    margin: auto;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 760px) and (max-width: 760px) {
+  header .navigation .nav_menu {
+    position: fixed;
+    padding: 1rem 0;
+    width: 40%;
+    top: -25rem;
+    left: 10rem;
+    right: 0;
+    margin: 0 auto;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 1rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  header .navigation .nav_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 1rem;
+  }
+  header .navigation .nav_list .nav_item a {
+    font-size: 1rem;
+    color: black;
+  }
+  header .navigation .nav_toggle {
+    width: 50%;
+    margin: auto;
+    text-align: right;
+    cursor: pointer;
+  }
+  header .navigation .nav_toggle img {
+    margin: auto;
+    width: 1.5rem;
+  }
+  header .navigation #nav-menu.active {
+    top: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 760px) and (max-width: 1350px) {
+  header {
+    background-color: #1f1f1f;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 1% 0;
+  }
+  header a {
+    color: white;
+  }
+  header .navigation {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+  }
+  header .navigation .logo {
+    width: 50%;
+    margin: auto;
+    padding: 1%;
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 760px) and (max-width: 1350px) and (max-width: 1350px) {
+  header .navigation .nav_menu {
+    position: fixed;
+    padding: 1rem 0;
+    width: 40%;
+    top: -310px;
+    left: 10rem;
+    right: 0;
+    margin: 0 auto;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    background-color: white;
+    border-radius: 1rem;
+  }
+}
+
+@media screen and (min-width: 760px) and (max-width: 1350px) {
+  header .navigation .nav_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 1rem;
+  }
+  header .navigation .nav_list .nav_item a {
+    font-size: 1rem;
+    color: black;
+  }
+  header .navigation .nav_list .nav_item .links:hover {
+    color: #c61616;
+  }
+  header .navigation .nav_toggle {
+    width: 50%;
+    margin: auto;
+    text-align: right;
+    cursor: pointer;
+  }
+  header .navigation .nav_toggle img {
+    margin: auto;
+  }
+  header #nav-menu.active {
+    top: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  header {
+    background-color: #1f1f1f;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 1% 0;
+  }
+  header a {
+    color: white;
+  }
+  header .navigation {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+  }
+  header .navigation .logo {
+    width: 25%;
+    margin: auto;
+    padding: 0.5rem;
+    font-size: 1.6rem;
+  }
+  header .navigation .nav_menu {
+    width: 65%;
+    top: 0px;
+    left: 0px;
+    right: 0;
+    margin: 0 auto;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 1rem;
+  }
+  header .navigation .nav_list {
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  header .navigation .nav_list .nav_item {
+    margin: 1rem 2rem;
+  }
+  header .navigation .nav_list .nav_item a {
+    font-size: 1.2rem;
+  }
+  header .navigation .nav_list .nav_item .links:hover {
+    color: #c61616;
+  }
+  header .navigation .nav_toggle {
+    display: none;
+  }
+}

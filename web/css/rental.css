@@ -1,0 +1,764 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 8, 2022, 3:36:08 PM
+    Author     : OTTOX
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  color: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #1f1f1f;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+body li {
+  list-style: none;
+}
+
+body h1 {
+  color: white;
+  font-size: 1rem;
+  margin: 2% 0;
+}
+
+body span {
+  color: #c61616;
+}
+
+body h2 {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 2% 0;
+}
+
+body h3 {
+  font-size: 0.6rem;
+}
+
+body h4 {
+  font-size: 0.8em;
+  color: #c61616;
+  margin: 2% 0;
+}
+
+body p {
+  margin: 2% 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+body #rental {
+  color: #c61616;
+}
+
+@media screen and (max-width: 760px) {
+  header {
+    background-color: #1f1f1f;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 1% 0;
+  }
+  header a {
+    color: white;
+  }
+  header .navigation {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+  }
+  header .navigation .logo {
+    width: 50%;
+    margin: auto;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 760px) and (max-width: 760px) {
+  header .navigation .nav_menu {
+    position: fixed;
+    padding: 1rem 0;
+    width: 40%;
+    top: -25rem;
+    left: 10rem;
+    right: 0;
+    margin: 0 auto;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 1rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  header .navigation .nav_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 1rem;
+  }
+  header .navigation .nav_list .nav_item a {
+    font-size: 1rem;
+    color: black;
+  }
+  header .navigation .nav_toggle {
+    width: 50%;
+    margin: auto;
+    text-align: right;
+    cursor: pointer;
+  }
+  header .navigation .nav_toggle img {
+    margin: auto;
+    width: 1.5rem;
+  }
+  header .navigation #nav-menu.active {
+    top: 0.5rem;
+  }
+  main {
+    margin-top: 10%;
+  }
+  main .car-image-details {
+    background-color: #ececec;
+    padding: 1rem 0;
+  }
+  main .car-image-details .main-image .extra-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main .car-image-details .main-image .extra-image #two,
+  main .car-image-details .main-image .extra-image #three,
+  main .car-image-details .main-image .extra-image #four {
+    width: 10rem;
+    margin: auto;
+  }
+  main .car-image-details .car-details {
+    background-color: grey;
+    color: black;
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 2rem;
+  }
+  main .booking-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 1rem;
+    width: 90%;
+  }
+  main .booking-details strong {
+    font-size: 2rem;
+  }
+  main .booking-details .book-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: auto;
+  }
+  main .booking-details .book-card label {
+    margin: 0.5rem auto;
+  }
+  main .booking-details .book-card input {
+    width: 55vw;
+    border: none;
+    height: 30px;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 1rem;
+  }
+  main .booking-details button {
+    margin: auto;
+    text-align: center;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+  }
+  main .booking-details button:hover {
+    color: white;
+    background-color: #c61616;
+  }
+  main .similar-car {
+    margin: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  main .similar-car .rent-1,
+  main .similar-car .rent-2,
+  main .similar-car .rent-3 {
+    background-color: grey;
+    width: 20rem;
+    border-radius: 2rem;
+    margin: 2rem auto;
+    text-align: center;
+  }
+  main .similar-car .rent-1 img,
+  main .similar-car .rent-2 img,
+  main .similar-car .rent-3 img {
+    width: 15rem;
+  }
+  main .similar-car .rent-1 .details,
+  main .similar-car .rent-2 .details,
+  main .similar-car .rent-3 .details {
+    font-weight: bold;
+  }
+  main .similar-car .rent-1 .year,
+  main .similar-car .rent-2 .year,
+  main .similar-car .rent-3 .year {
+    color: black;
+    font-weight: bold;
+  }
+  main .similar-car .rent-1 button,
+  main .similar-car .rent-2 button,
+  main .similar-car .rent-3 button {
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+  }
+  main .similar-car .rent-1 button:hover,
+  main .similar-car .rent-2 button:hover,
+  main .similar-car .rent-3 button:hover {
+    background-color: #c61616;
+    color: white;
+  }
+  footer {
+    width: 100%;
+    text-align: center;
+    background-color: #313131;
+    padding: 5% 0;
+  }
+  footer .logo-copyright-social .logo-footer h1 {
+    font-size: 1.2rem;
+  }
+  footer .logo-copyright-social p {
+    font-size: 1rem;
+  }
+  footer .logo-copyright-social .social-mail-footer .social-footer img {
+    width: 2rem;
+    margin: 2% 3%;
+  }
+  footer .logo-copyright-social .logo-footer h1 {
+    font-size: 1.2rem;
+  }
+  footer .logo-copyright-social p {
+    font-size: 1rem;
+  }
+  footer .logo-copyright-social .social-mail-footer .social-footer img {
+    width: 2rem;
+    margin: 2% 3%;
+  }
+}
+
+@media screen and (min-width: 760px) and (max-width: 1350px) {
+  header {
+    background-color: #1f1f1f;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 1% 0;
+  }
+  header a {
+    color: white;
+  }
+  header .navigation {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+  }
+  header .navigation .logo {
+    width: 50%;
+    margin: auto;
+    padding: 1%;
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 760px) and (max-width: 1350px) and (max-width: 1350px) {
+  header .navigation .nav_menu {
+    position: fixed;
+    padding: 1rem 0;
+    width: 40%;
+    top: -310px;
+    left: 10rem;
+    right: 0;
+    margin: 0 auto;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    background-color: white;
+    border-radius: 1rem;
+  }
+}
+
+@media screen and (min-width: 760px) and (max-width: 1350px) {
+  header .navigation .nav_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 1rem;
+  }
+  header .navigation .nav_list .nav_item a {
+    font-size: 1rem;
+    color: black;
+  }
+  header .navigation .nav_list .nav_item .links:hover {
+    color: #c61616;
+  }
+  header .navigation .nav_toggle {
+    width: 50%;
+    margin: auto;
+    text-align: right;
+    cursor: pointer;
+  }
+  header .navigation .nav_toggle img {
+    margin: auto;
+  }
+  header #nav-menu.active {
+    top: 0.5rem;
+  }
+  main {
+    margin-top: 10%;
+  }
+  main .car-image-details {
+    background-color: #ececec;
+    padding: 2rem 0;
+  }
+  main .car-image-details .main-image {
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main .car-image-details .main-image #one {
+    width: 60vw;
+  }
+  main .car-image-details .main-image .extra-image {
+    display: block;
+    margin: auto;
+    background-color: black;
+    width: 20vw;
+  }
+  main .car-image-details .main-image .extra-image #two,
+  main .car-image-details .main-image .extra-image #three,
+  main .car-image-details .main-image .extra-image #four {
+    width: 20vw;
+    margin: auto;
+  }
+  main .car-image-details .car-details {
+    background-color: grey;
+    color: black;
+    padding: 1rem;
+  }
+  main .booking-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 1rem;
+    width: 90%;
+  }
+  main .booking-details strong {
+    font-size: 2rem;
+  }
+  main .booking-details .book-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: auto;
+  }
+  main .booking-details .book-card label {
+    margin: 0.5rem auto;
+  }
+  main .booking-details .book-card input {
+    width: 55vw;
+    border: none;
+    height: 30px;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 1rem;
+  }
+  main .booking-details button {
+    margin: auto;
+    text-align: center;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+  }
+  main .booking-details button:hover {
+    color: white;
+    background-color: #c61616;
+  }
+  main .similar-car {
+    margin: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  main .similar-car .rent-1,
+  main .similar-car .rent-2,
+  main .similar-car .rent-3 {
+    background-color: grey;
+    width: 20rem;
+    border-radius: 2rem;
+    margin: 2rem auto;
+    text-align: center;
+  }
+  main .similar-car .rent-1 img,
+  main .similar-car .rent-2 img,
+  main .similar-car .rent-3 img {
+    width: 15rem;
+  }
+  main .similar-car .rent-1 .details,
+  main .similar-car .rent-2 .details,
+  main .similar-car .rent-3 .details {
+    font-weight: bold;
+  }
+  main .similar-car .rent-1 .year,
+  main .similar-car .rent-2 .year,
+  main .similar-car .rent-3 .year {
+    color: black;
+    font-weight: bold;
+  }
+  main .similar-car .rent-1 button,
+  main .similar-car .rent-2 button,
+  main .similar-car .rent-3 button {
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+  }
+  main .similar-car .rent-1 button:hover,
+  main .similar-car .rent-2 button:hover,
+  main .similar-car .rent-3 button:hover {
+    background-color: #c61616;
+    color: white;
+  }
+  footer {
+    width: 100%;
+    text-align: center;
+    background-color: #313131;
+    padding: 5% 0;
+  }
+  footer .logo-copyright-social .logo-footer h1 {
+    font-size: 1.2rem;
+  }
+  footer .logo-copyright-social p {
+    font-size: 1rem;
+  }
+  footer .logo-copyright-social .social-mail-footer .social-footer img {
+    width: 2rem;
+    margin: 2% 3%;
+  }
+  footer .logo-copyright-social .logo-footer h1 {
+    font-size: 1.2rem;
+  }
+  footer .logo-copyright-social p {
+    font-size: 1rem;
+  }
+  footer .logo-copyright-social .social-mail-footer .social-footer img {
+    width: 2rem;
+    margin: 2% 3%;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  header {
+    background-color: #1f1f1f;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 1% 0;
+  }
+  header a {
+    color: white;
+  }
+  header .navigation {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+  }
+  header .navigation .logo {
+    width: 25%;
+    margin: auto;
+    padding: 0.5rem;
+    font-size: 1.6rem;
+  }
+  header .navigation .nav_menu {
+    width: 65%;
+    top: 0px;
+    left: 0px;
+    right: 0;
+    margin: 0 auto;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 1rem;
+  }
+  header .navigation .nav_list {
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  header .navigation .nav_list .nav_item {
+    margin: 1rem 2rem;
+  }
+  header .navigation .nav_list .nav_item a {
+    font-size: 1.2rem;
+  }
+  header .navigation .nav_list .nav_item .links:hover {
+    color: #c61616;
+  }
+  header .navigation .nav_toggle {
+    display: none;
+  }
+  main {
+    margin-top: 10%;
+  }
+  main .car-image-details {
+    background-color: #ececec;
+    padding: 1rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main .car-image-details .main-image {
+    margin: auto;
+    width: 50%;
+  }
+  main .car-image-details .main-image #one {
+    width: 40vw;
+    margin: 0 auto;
+  }
+  main .car-image-details .main-image .extra-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 70%;
+    margin: auto;
+  }
+  main .car-image-details .main-image .extra-image #two,
+  main .car-image-details .main-image .extra-image #three,
+  main .car-image-details .main-image .extra-image #four {
+    width: 10rem;
+    margin: auto;
+  }
+  main .car-image-details .car-details {
+    background-color: grey;
+    color: black;
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 2rem;
+    width: 50%;
+  }
+  main .booking-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 1rem;
+    width: 90%;
+  }
+  main .booking-details strong {
+    font-size: 2rem;
+  }
+  main .booking-details .book-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: auto;
+  }
+  main .booking-details .book-card label {
+    margin: 0.5rem auto;
+  }
+  main .booking-details .book-card input {
+    width: 55vw;
+    border: none;
+    height: 30px;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 1rem;
+  }
+  main .booking-details button {
+    margin: auto;
+    text-align: center;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+  }
+  main .booking-details button:hover {
+    color: white;
+    background-color: #c61616;
+  }
+  main .similar-car {
+    margin: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  main .similar-car .rent-1,
+  main .similar-car .rent-2,
+  main .similar-car .rent-3 {
+    background-color: grey;
+    width: 20rem;
+    border-radius: 2rem;
+    margin: 2rem auto;
+    text-align: center;
+  }
+  main .similar-car .rent-1 img,
+  main .similar-car .rent-2 img,
+  main .similar-car .rent-3 img {
+    width: 15rem;
+  }
+  main .similar-car .rent-1 .details,
+  main .similar-car .rent-2 .details,
+  main .similar-car .rent-3 .details {
+    font-weight: bold;
+  }
+  main .similar-car .rent-1 .year,
+  main .similar-car .rent-2 .year,
+  main .similar-car .rent-3 .year {
+    color: black;
+    font-weight: bold;
+  }
+  main .similar-car .rent-1 button,
+  main .similar-car .rent-2 button,
+  main .similar-car .rent-3 button {
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+  }
+  main .similar-car .rent-1 button:hover,
+  main .similar-car .rent-2 button:hover,
+  main .similar-car .rent-3 button:hover {
+    background-color: #c61616;
+    color: white;
+  }
+  footer {
+    width: 100%;
+    text-align: center;
+    background-color: #313131;
+    padding: 1% 0;
+  }
+  footer .logo-copyright-social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+  }
+  footer .logo-copyright-social .logo-footer {
+    margin: auto;
+  }
+  footer .logo-copyright-social .logo-footer h1 {
+    font-size: 2vw;
+  }
+  footer .logo-copyright-social p {
+    font-size: 1.2vw;
+  }
+  footer .logo-copyright-social .social-mail-footer {
+    margin: auto;
+  }
+  footer .logo-copyright-social .social-mail-footer .social-footer {
+    margin: auto;
+  }
+  footer .logo-copyright-social .social-mail-footer .social-footer img {
+    width: 2rem;
+    margin: 2% 3%;
+  }
+}

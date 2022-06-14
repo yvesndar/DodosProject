@@ -9,8 +9,9 @@
     <property name="hibernate.hbm2ddl.auto">update</property>
     <property name="hibernate.show_sql">true</property>
     <property name="hibernate.connection.autocommit">true</property>
-    <mapping class="Dodos.Model.Rental_Client"/>
-    <mapping class="Dodos.Model.Cars_to_Rental"/>
+    <mapping class="Dodos.Model.Cars"/>
     <mapping class="Dodos.Model.Car_Category"/>
+    <mapping class="Dodos.Model.Cars_to_Rental"/>
+    <mapping class="Dodos.Model.Rental_Client"/>
   </session-factory>
 </hibernate-configuration>
